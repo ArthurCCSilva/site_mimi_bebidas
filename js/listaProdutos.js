@@ -2,21 +2,21 @@
 const listaProdutos = [
     { 
         id: 1,
-        name: "Batata", 
-        description: "Batatas frescas ideais para frituras ou purês.", 
-        valor: "R$ 4,00", 
-        price: 4.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg" 
+        name: "Gordon'S London Dry Gin - 750ml", 
+        description: "Gin com teor alcoólico de 43%. Contém 750ml.", 
+        valor: "R$ 79,99", 
+        price: 79.99, 
+        category: "bebidas", 
+        image: "img/gordon's_london_dry_gin_750ml.jpg" 
     },
     { 
         id: 2,
-        name: "Salsicha - Hot Dog", 
-        description: "Salsicha para cachorro-quente, prática e deliciosa.", 
-        valor: "R$ 8,00", 
-        price: 8.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        name: "Vodka Orloff - 1L", 
+        description: "Vodka com teor alcoólico de 37,5%. Contém 1L.", 
+        valor: "R$ 56,99", 
+        price: 56.99, 
+        category: "bebidas", 
+        image: "img/vodka_orloff_1l.jpg"    
     },
     {   id: 3,
         name: "Shampoo - Seda", 
