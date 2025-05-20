@@ -2,8 +2,8 @@
 const listaProdutos = [
     { 
         id: 1,
-        name: "Gordon'S London Dry Gin - 750ml", 
-        description: "Gin com teor alcoólico de 43%. Contém 750ml.", 
+        name: "Gordon'S London Dry Gin 750ml", 
+        description: "Gin com teor alcoólico de 43% vol. Contém 750ml.", 
         valor: "R$ 79,99", 
         price: 79.99, 
         category: "bebidas", 
@@ -11,71 +11,71 @@ const listaProdutos = [
     },
     { 
         id: 2,
-        name: "Vodka Orloff - 1L", 
-        description: "Vodka com teor alcoólico de 37,5%. Contém 1L.", 
+        name: "Vodka Orloff 1L", 
+        description: "Vodka com teor alcoólico de 37,5% vol. Contém 1L.", 
         valor: "R$ 56,99", 
         price: 56.99, 
         category: "bebidas", 
         image: "img/vodka_orloff_1l.jpg"    
     },
     {   id: 3,
-        name: "Shampoo - Seda", 
-        description: "Shampoo hidratante para cabelos sedosos e brilhantes.", 
-        valor: "R$ 12,99", 
-        price: 12.99, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Dreher 900ml", 
+        description: "Dreher com teor alcoólico de 33% vol. Contém 900ml.", 
+        valor: "R$ 52,24", 
+        price: 52.24, 
+        category: "bebidas", 
+        image: "img/dreher_900ml.jpg"    
     },
     { 
         id: 4,
-        name: "Água - Mineral", 
-        description: "Água mineral pura e refrescante para hidratação diária.", 
-        valor: "R$ 2,00", 
-        price: 2.00, 
+        name: "Rum Montilla Carta Branca 1L", 
+        description: "Montilla Carta Branca com teor alcoólico de 36% vol. Contém 900ml.", 
+        valor: "R$ 45,25", 
+        price: 45.25, 
         category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        image: "img/rum_montilla_carta_branca_1l.jpg"    
     },
     {   id: 5,
-        name: "Arroz - Panelaço", 
-        description: "Arroz parboilizado de alta qualidade para suas refeições diárias.", 
-        valor: "R$ 5,69", 
-        price: 5.69, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Campari 748ml", 
+        description: "Cmapari com teor alcoólico de 28,5% vol. Contém 748ml.", 
+        valor: "R$ 52,60", 
+        price: 52.60, 
+        category: "bebidas", 
+        image: "img/campari_748ml.jpg"    
     },
     {   id: 6,
-        name: "Feijão - Preto", 
-        description: "Feijão preto cozido rapidamente e perfeito para acompanhamentos.", 
-        valor: "R$ 7,99", 
-        price: 7.99, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Vinho Quinta do Morgado 750ml", 
+        description: "Vinho: Suave. Teor alcoólico de 10% vol.Contém 750ml.", 
+        valor: "R$ 22,90", 
+        price: 22.90, 
+        category: "6", 
+        image: "img/vinho_quinta_do_morgado_suave_750ml.jpg"    
     },
     {   id: 7,
-        name: "Carne - Suína", 
-        description: "Carne suína fresca para churrasco e pratos rápidos.", 
-        valor: "R$ 20,00", 
-        price: 20.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Petra Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
+        valor: "R$ 45,90", 
+        price: 45.90, 
+        category: "bebidas", 
+        image: "img/cerveja_petra_fardo_latinha_350ml.jpg"    
     },
     {   
         id: 8,
-        name: "Macarrão - Espaguete", 
-        description: "Massa de espaguete para pratos deliciosos como carbonara ou bolonhesa.", 
-        valor: "R$ 4,50", 
-        price: 5.50, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Skol Pilsen Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml. Cerveja pilsen.", 
+        valor: "R$ 49,90", 
+        price: 49.90, 
+        category: "bebidas", 
+        image: "img/cerveja_skol_pilsen _fardo_350ml.jpg"    
     },
     { 
         id: 9,
-        name: "Escova de Unhas", 
-        description: "Escova de unhas para limpeza profunda.", 
-        valor: "R$ 6,50", 
-        price: 6.50, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Heineken Long Neck Pack c/6 garrafa 330ml", 
+        description: "Contém 6 garrafas. Cada garrafa contém 330ml.", 
+        valor: "R$ 49,99", 
+        price: 49.99, 
+        category: "bebidas", 
+        image: "img/cerveja_heineken_long_neck_fardo_330ml.jpg"    
     },
     { 
         id: 10,
@@ -92,7 +92,7 @@ const listaProdutos = [
         description: "Pão francês fresco e crocante para seu café da manhã.", 
         valor: "R$ 2,50", 
         price: 2.50, 
-        category: "alimentos", 
+        category: "bebidas", 
         image: "img/imgproduto196.jpg"    
     },
     { 
@@ -106,39 +106,39 @@ const listaProdutos = [
     },
     { 
         id: 13,
-        name: "Farinha - Trigo", 
-        description: "Farinha de trigo ideal para bolos, pães e massas caseiras.", 
-        valor: "R$ 5,00", 
-        price: 5.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Vodka Slova - 970ml", 
+        description: "Vodka Slova com teor alcoólico de 37,5% vol. Contém 970ml.", 
+        valor: "R$ 15,00", 
+        price: 15.00, 
+        category: "bebidas",
+        image: "img/vodka_slova_970ml.jpg"    
     },
     { 
         id: 14,
-        name: "Óleo - Soja", 
-        description: "Óleo de soja para frituras e preparações culinárias.", 
-        valor: "R$ 8,99", 
-        price: 8.99, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Petra Lata 350ml", 
+        description: "Cerveja Puro Malte. Contém 1 lata de 350ml", 
+        valor: "R$ 4,50", 
+        price: 4.50, 
+        category: "bebidas", 
+        image: "img/cerveja_petra_lata_350ml.jpg"    
     },
     { 
         id: 15,
-        name: "Sal - Refinado", 
-        description: "Sal refinado para temperar suas refeições diárias.", 
-        valor: "R$ 2,00", 
-        price: 2.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Skol Lata 350ml", 
+        description: "Cerveja Pilsen. Contém 1 lata de 350ml.", 
+        valor: "R$ 3,50", 
+        price: 3.50, 
+        category: "bebidas", 
+        image: "img/cerveja_skol_pilsen_lata_350ml.jpg"    
     },
     { 
         id: 16,
-        name: "Café - Torrado", 
-        description: "Café torrado e moído para um sabor intenso e encorpado.", 
-        valor: "R$ 15,00", 
-        price: 15.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Heineken Long Neck Pack Garrafa 330ml", 
+        description: "Contém 1 garrafa contendo 330ml.", 
+        valor: "R$ 8,90", 
+        price: 8.90, 
+        category: "bebidas", 
+        image: "img/cerveja_heineken_long_neck_garrafa_330ml.jpg"    
     },
     { 
         id: 17,
