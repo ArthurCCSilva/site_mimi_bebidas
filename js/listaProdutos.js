@@ -3,7 +3,7 @@ const listaProdutos = [
     { 
         id: 1,
         name: "Gordon'S London Dry Gin 750ml", 
-        description: "Gin com teor alcoólico de 43% vol. Contém 750ml.", 
+        description: "Gin com teor alcoólico de 43% vol.", 
         valor: "R$ 79,99", 
         price: 79.99, 
         category: "destilados", 
@@ -12,7 +12,7 @@ const listaProdutos = [
     { 
         id: 2,
         name: "Vodka Orloff 1L", 
-        description: "Vodka com teor alcoólico de 37,5% vol. Contém 1L.", 
+        description: "Vodka com teor alcoólico de 37,5% vol.", 
         valor: "R$ 56,99", 
         price: 56.99, 
         category: "destilados", 
@@ -20,7 +20,7 @@ const listaProdutos = [
     },
     {   id: 3,
         name: "Dreher 900ml", 
-        description: "Dreher com teor alcoólico de 33% vol. Contém 900ml.", 
+        description: "Dreher com teor alcoólico de 33% vol.", 
         valor: "R$ 52,24", 
         price: 52.24, 
         category: "destilados", 
@@ -29,7 +29,7 @@ const listaProdutos = [
     { 
         id: 4,
         name: "Rum Montilla Carta Branca 1L", 
-        description: "Montilla Carta Branca com teor alcoólico de 36% vol. Contém 900ml.", 
+        description: "Montilla Carta Branca com teor alcoólico de 36% vol.", 
         valor: "R$ 45,25", 
         price: 45.25, 
         category: "destilados", 
@@ -37,7 +37,7 @@ const listaProdutos = [
     },
     {   id: 5,
         name: "Campari 748ml", 
-        description: "Cmapari com teor alcoólico de 28,5% vol. Contém 748ml.", 
+        description: "Cmapari com teor alcoólico de 28,5% vol.", 
         valor: "R$ 52,60", 
         price: 52.60, 
         category: "destilados", 
@@ -45,7 +45,7 @@ const listaProdutos = [
     },
     {   id: 6,
         name: "Vinho Quinta do Morgado 750ml", 
-        description: "Vinho: Suave. Teor alcoólico de 10% vol.Contém 750ml.", 
+        description: "Vinho: Suave. Teor alcoólico de 10% vol.", 
         valor: "R$ 22,90", 
         price: 22.90, 
         category: "variedades", 
@@ -70,7 +70,7 @@ const listaProdutos = [
     },
     { 
         id: 9,
-        name: "Cerveja Heineken Long Neck Pack c/6 garrafa 330ml", 
+        name: "Cerveja Heineken Long Neck Pack c/6 garrafas 330ml", 
         description: "Contém 6 garrafas. Cada garrafa contém 330ml.", 
         valor: "R$ 49,99", 
         price: 49.99, 
@@ -81,8 +81,8 @@ const listaProdutos = [
         id: 10,
         name: "Cachaça Ypioca Ouro 965ml", 
         description: "Marca: Ypioca.<br>Tipo: Ouro.<br>Contém: 965ml.", 
-        valor: "R$ 4,99", 
-        price: 4.99, 
+        valor: "R$ 20,00", 
+        price: 20.00, 
         category: "destilados", 
         image: "img/cachaca_ypioca_ouro_965ml.jpg"    
     },
@@ -133,7 +133,7 @@ const listaProdutos = [
     },
     { 
         id: 16,
-        name: "Cerveja Heineken Long Neck Pack Garrafa 330ml", 
+        name: "Cerveja Heineken Long Neck Garrafa 330ml", 
         description: "Contém 1 garrafa contendo 330ml.", 
         valor: "R$ 8,90", 
         price: 8.90, 
@@ -142,282 +142,282 @@ const listaProdutos = [
     },
     { 
         id: 17,
-        name: "Molho - Tomate", 
-        description: "Molho de tomate pronto para massas e pizzas.", 
+        name: "Vodka Nordka 900ml", 
+        description: "Vodka 5x destilada. Teor alcoólico de 37,5% vol.", 
         valor: "R$ 4,00", 
         price: 4.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/vodka_nordka_900ml.jpg"    
     },
     { 
         id: 18,
-        name: "Massa - Lasanha", 
-        description: "Massa para lasanha fresca e deliciosa.", 
+        name: "Vodka Intencion 900ml", 
+        description: "Vodka 5x destilada. Teor alcoólico de 38% vol.", 
         valor: "R$ 6,50", 
         price: 6.50, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/vodka_intencion_900ml.jpg"    
     },
     { 
         id: 19,
-        name: "Queijo - Mussarela", 
-        description: "Queijo mussarela fresco para pizzas e lanches.", 
+        name: "Vodka Slova Fruits Blueberry 965ml", 
+        description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 12,00", 
         price: 12.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/vodka_slova_fruits_blueberry_965ml.jpg"    
     },
     { 
         id: 20,
-        name: "Presunto - Cozido", 
-        description: "Presunto cozido para sanduíches e pratos rápidos.", 
+        name: "Vodka Absolut 1L", 
+        description: "Vodka com teor alcoólico de 13,5% vol.", 
         valor: "R$ 10,00", 
         price: 10.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/vodka_absolut_1l.jpg"    
     },
     { 
         id: 21,
-        name: "Iogurte - Natural", 
-        description: "Iogurte natural rico em probióticos para uma dieta saudável.", 
+        name: "Vodka Smirnoff 998ml", 
+        description: "Vodka 10x filtrada. Teor alcoólico 37,5%.", 
         valor: "R$ 5,00", 
         price: 5.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/vodka_smirnoff_998ml.jpg"    
     },
     { 
         id: 22,
-        name: "Azeite - Oliva", 
-        description: "Azeite de oliva extra virgem para saladas e cozimentos.", 
-        valor: "R$ 20,00", 
-        price: 20.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaça Ypioca Reserva 965ml", 
+        description: "Cachaça envelhecida em barris de carvalho. Teor alcoólico de 38% vol.", 
+        valor: "R$ 43,00", 
+        price: 43.00, 
+        category: "destilados", 
+        image: "img/cachaca_ypioca_reserva_965ml.jpg"    
     },
     { 
         id: 23,
-        name: "Polpa - Frutas", 
-        description: "Polpa de frutas congelada para sucos naturais.", 
-        valor: "R$ 8,00", 
-        price: 8.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaça Ypioca Prata 965ml", 
+        description: "Marca: Ypioca.<br>Tipo: Prata.<br>Contém: 965ml.", 
+        valor: "R$ 17,00", 
+        price: 17.00, 
+        category: "destilados",
+        image: "img/cachaca_ypioca_prata_965ml.jpg"    
     },
     { 
         id: 24,
-        name: "Sabonete - Flora", 
-        description: "Sabonete hidratante para pele macia e limpa.", 
-        valor: "R$ 5,69", 
-        price: 5.69, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg" 
+        name: "Cachaça Ypioca Guaraná 1L", 
+        description: "Marca: Ypioca.<br>Tipo: Quaraná.<br>Contém: 1L.", 
+        valor: "R$ 23,00", 
+        price: 23.00, 
+        category: "destilados", 
+        image: "img/cachaca_ypioca_guarana_1l.jpg" 
     },
     { 
         id: 25,
-        name: "Detergente - Ypê", 
-        description: "Detergente eficiente para limpeza de louças e utensílios.", 
-        valor: "R$ 1,99", 
-        price: 1.99, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaça 51 Ouro 965ml", 
+        description: "Marca: 51.<br>Tipo: Ouro.<br>Contém: 965ml.", 
+        valor: "R$ 18,00", 
+        price: 18.00, 
+        category: "destilados", 
+        image: "img/cachaca_51_ouro_965ml.jpg"    
     },
     { 
         id: 26,
-        name: "Papel Higiênico - Fofinho", 
-        description: "Papel higiênico macio e absorvente para uso diário.", 
-        valor: "R$ 10,00", 
-        price: 10.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaça 51 965ml", 
+        description: "Marca: 51.<br>Tipo: Original.<br>Contém: 965ml.", 
+        valor: "R$ 16,00", 
+        price: 16.00, 
+        category: "destilados", 
+        image: "img/cachaca_51_965ml.jpg"    
     },
     { 
         id: 27,
-        name: "Creme Dental - Colgate", 
-        description: "Creme dental para higiene bucal completa.", 
-        valor: "R$ 6,00", 
-        price: 6.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Whisky Black e White 1L", 
+        description: "O Whisky Black & White tem mais de um século. Criado por James Buchanan.", 
+        valor: "R$ 70,00", 
+        price: 70.00, 
+        category: "destilados", 
+        image: "img/whisky_black_e_white_1l.jpg"    
     },
     { 
         id: 28,
-        name: "Desodorante - Rexona", 
-        description: "Desodorante antitranspirante para proteção duradoura.", 
-        valor: "R$ 12,00", 
-        price: 12.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Gin Tanqueray 750ml", 
+        description: "Gin Tanqueray 750ml. Teor alcoólico de 47,3% vol.", 
+        valor: "R$ 130,00", 
+        price: 130.00, 
+        category: "destilados", 
+        image: "img/gin_tanqueray_750ml.jpg"    
     },
     { 
         id: 29,
-        name: "Absorvente - Intimus", 
-        description: "Absorvente feminino para maior conforto no dia a dia.", 
-        valor: "R$ 8,00", 
-        price: 8.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Grand Old Parr 1L", 
+        description: "Marca: Old Parr.<br>Tipo de álcool: Blended whiskey.<br>Sabor: Baunilha.",
+        valor: "R$ 160,00", 
+        price: 160.00, 
+        category: "destilados", 
+        image: "img/grand_old_parr_1l.jpg"    
     },
     { 
         id: 30,
-        name: "Sabonete Líquido - Dove", 
-        description: "Sabonete líquido hidratante para pele macia e suave.", 
-        valor: "R$ 15,00", 
-        price: 15.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaca Ypioca 150 anos 700ml", 
+        description: "Especial comemorativa aos 150 anos.", 
+        valor: "R$ 60,00", 
+        price: 60.00, 
+        category: "destilados", 
+        image: "img/cachaca_ypioca_150_anos_700ml.jpg"    
     },
     { 
         id: 31,
-        name: "Escova de Dentes - Oral-B", 
-        description: "Escova de dentes com cerdas macias para uma limpeza profunda.", 
+        name: "Cerveja Devassa Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 10,00", 
         price: 10.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_devassa_fardo_350ml.jpg"    
     },
     { 
         id: 32,
-        name: "Fio Dental - Johnson", 
-        description: "Fio dental para limpeza interdental eficaz.", 
+        name: "Cerveja Devassa Lata 350ml", 
+        description: "Contém 1 lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 5,00", 
         price: 5.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_devassa_latinha_350ml.jpg"    
     },
     { 
         id: 33,
-        name: "Algodão - Hidrófilo", 
-        description: "Algodão hidrófilo para cuidados pessoais e limpeza.", 
+        name: "Cerveja Crystal Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. cada lata com 350ml.", 
         valor: "R$ 7,00", 
         price: 7.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_crystal_fardo_350ml.jpg"    
     },
     { 
         id: 34,
-        name: "Lenços Umedecidos - Baby", 
-        description: "Lenços umedecidos para bebês, suaves e seguros.", 
+        name: "Cerveja Crystal Lata 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 12,00", 
         price: 12.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_crystal_latinha_350ml.jpg"    
     },
     { 
         id: 35,
-        name: "Protetor Solar - Nivea", 
-        description: "Protetor solar FPS 50 para proteção contra raios UV.", 
+        name: "Cerveja Bohemia Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 30,00", 
         price: 30.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_bohemia_fardo_350ml.jpg"    
     },
     { 
         id: 36,
-        name: "Lâmina de Barbear - Gillette", 
-        description: "Lâmina de barbear para um barbear perfeito e confortável.", 
-        valor: "R$ 18,00", 
-        price: 18.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cerveja Bohemia Lata 350ml", 
+        description: "Contém 1 lata com 350ml. Cerveja Puro Malte.", 
+        valor: "R$ 14,00", 
+        price: 14.00, 
+        category: "cervejas", 
+        image: "img/cerveja_bohemia_latinha_350ml.jpg"    
     },
     { 
         id: 37,
-        name: "Condicionador - Pantene", 
-        description: "Condicionador para cabelos sedosos e fáceis de pentear.", 
+        name: "Cerveja Itaipava Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml.", 
         valor: "R$ 14,00", 
         price: 14.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_itaipava_fardo_350ml.jpg"    
     },
     { 
         id: 38,
-        name: "Esponja de Banho - Lux", 
-        description: "Esponja de banho para uma limpeza eficaz e relaxante.", 
+        name: "Cerveja Itaipava Lata 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 5,00", 
         price: 5.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_itaipava_latinha_350ml.jpg"    
     },
     { 
         id: 39,
-        name: "Cotonete - Johnson", 
-        description: "Cotonetes para limpeza dos ouvidos e cuidados pessoais.", 
+        name: "Vinho Vale real 900ml", 
+        description: "Vinho: Tinto. Teor alcoólico de 7,9% vol", 
         valor: "R$ 6,00", 
         price: 6.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/vinho_vale_real_900ml.jpg"
     },
     { 
         id: 40,
-        name: "Coca-Cola - Zero", 
-        description: "Refrigerante Coca-Cola Zero sem açúcar.", 
+        name: "Energético Red Bull Pack c/6 Latas 250ml", 
+        description: "Contém 6 latas. Cada lata com 250ml.", 
         valor: "R$ 3,00", 
         price: 3.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/energetico_red_bull_fardo_6_250ml.jpg"    
     },
     { 
         id: 41,
-        name: "Leite - Integral", 
-        description: "Leite integral fresco e nutritivo para sua família.", 
+        name: "Energético Red Bull Lata 250ml", 
+        description: "Contém 1 lata com 250ml.", 
         valor: "R$ 3,99", 
         price: 3.99, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/energetico_red_bull_lata_250ml.jpg"    
     },
     { 
         id: 42,
-        name: "Refrigerante - Guaraná", 
-        description: "Refrigerante sabor guaraná, refrescante e energizante.", 
+        name: "Energético Baly tradicional Pack c/6 Latas 473ml", 
+        description: "Contém 6 latas. Cada lata com 473ml.", 
         valor: "R$ 4,00", 
         price: 4.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/energetico_baly_fardo_6_473ml.jpg"    
     },
     { 
         id: 43,
-        name: "Chá - Verde", 
-        description: "Chá verde para um estilo de vida saudável e revitalizante.", 
+        name: "Energético Baly Tradicional Lata 473ml", 
+        description: "Contém 1 lata com 473ml.", 
         valor: "R$ 5,00", 
         price: 5.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/energetico_baly_tradicional_lata_473ml.jpg"    
     },
     { 
         id: 44,
-        name: "Energético - Red Bull", 
-        description: "Energético Red Bull para aumentar sua energia e foco.", 
+        name: "Refrigerante Delrio Cola 2L", 
+        description: "Refrigerante de sabor cola.", 
         valor: "R$ 8,00", 
         price: 8.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_cola_2l.jpg"    
     },
     { 
         id: 45,
-        name: "Vinho - Tinto", 
-        description: "Vinho tinto encorpado para ocasiões especiais e harmonizações.", 
-        valor: "R$ 40,00", 
-        price: 40.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        name: "Refrigerante Delrio Guaraná 2L", 
+        description: "Refrigerante de sabor guaraná.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_2l.jpg"    
     },
     { 
         id: 46,
-        name: "Whisky - Chivas", 
-        description: "Whisky premium Chivas Regal para apreciadores de destilados.", 
-        valor: "R$ 150,00", 
-        price: 150.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        name: "Refrigerante Delrio Uva 2L", 
+        description: "Refrigerante de sabor uva.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_uva_2l.jpg"    
     },
     { 
         id: 47,
-        name: "Suco - Natural", 
-        description: "Suco natural de frutas frescas para uma bebida saudável.", 
-        valor: "R$ 6,00", 
-        price: 6.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        name: "Refrigerante Delrio Laranja 2L", 
+        description: "Refrigerante de sabor laranja.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_laranja_2l.jpg"   
     },
     { 
         id: 48,

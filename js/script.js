@@ -55,15 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Função para filtrar produtos com base na barra de pesquisa
     function filtrarProdutos() {
-        const termoPesquisa = searchInput.value.toLowerCase();
-        return listaProdutos.filter((produto) =>
-            produto.name.toLowerCase().includes(termoPesquisa) ||
-            produto.description.toLowerCase().includes(termoPesquisa)
-        );
-    }
-
-    // Função para filtrar produtos com base na barra de pesquisa
-    function filtrarProdutos() {
         const termoPesquisa = removerAcentos(searchInput.value.toLowerCase()); // Remove acentos do termo de pesquisa
         return listaProdutos.filter((produto) =>
             removerAcentos(produto.name.toLowerCase()).includes(termoPesquisa) || // Remove acentos do nome
