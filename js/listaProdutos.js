@@ -6,7 +6,7 @@ const listaProdutos = [
         description: "Gin com teor alcoólico de 43% vol. Contém 750ml.", 
         valor: "R$ 79,99", 
         price: 79.99, 
-        category: "bebidas", 
+        category: "destilados", 
         image: "img/gordon's_london_dry_gin_750ml.jpg" 
     },
     { 
@@ -15,7 +15,7 @@ const listaProdutos = [
         description: "Vodka com teor alcoólico de 37,5% vol. Contém 1L.", 
         valor: "R$ 56,99", 
         price: 56.99, 
-        category: "bebidas", 
+        category: "destilados", 
         image: "img/vodka_orloff_1l.jpg"    
     },
     {   id: 3,
@@ -23,7 +23,7 @@ const listaProdutos = [
         description: "Dreher com teor alcoólico de 33% vol. Contém 900ml.", 
         valor: "R$ 52,24", 
         price: 52.24, 
-        category: "bebidas", 
+        category: "destilados", 
         image: "img/dreher_900ml.jpg"    
     },
     { 
@@ -32,7 +32,7 @@ const listaProdutos = [
         description: "Montilla Carta Branca com teor alcoólico de 36% vol. Contém 900ml.", 
         valor: "R$ 45,25", 
         price: 45.25, 
-        category: "bebidas", 
+        category: "destilados", 
         image: "img/rum_montilla_carta_branca_1l.jpg"    
     },
     {   id: 5,
@@ -40,7 +40,7 @@ const listaProdutos = [
         description: "Cmapari com teor alcoólico de 28,5% vol. Contém 748ml.", 
         valor: "R$ 52,60", 
         price: 52.60, 
-        category: "bebidas", 
+        category: "destilados", 
         image: "img/campari_748ml.jpg"    
     },
     {   id: 6,
@@ -48,7 +48,7 @@ const listaProdutos = [
         description: "Vinho: Suave. Teor alcoólico de 10% vol.Contém 750ml.", 
         valor: "R$ 22,90", 
         price: 22.90, 
-        category: "6", 
+        category: "variedades", 
         image: "img/vinho_quinta_do_morgado_suave_750ml.jpg"    
     },
     {   id: 7,
@@ -56,7 +56,7 @@ const listaProdutos = [
         description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 45,90", 
         price: 45.90, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_petra_fardo_latinha_350ml.jpg"    
     },
     {   
@@ -65,7 +65,7 @@ const listaProdutos = [
         description: "Contém 12 latas. Cada lata com 350ml. Cerveja pilsen.", 
         valor: "R$ 49,90", 
         price: 49.90, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_skol_pilsen _fardo_350ml.jpg"    
     },
     { 
@@ -74,35 +74,35 @@ const listaProdutos = [
         description: "Contém 6 garrafas. Cada garrafa contém 330ml.", 
         valor: "R$ 49,99", 
         price: 49.99, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_heineken_long_neck_fardo_330ml.jpg"    
     },
     { 
         id: 10,
-        name: "Suco - Del Valle", 
-        description: "Suco Del Valle de frutas naturais e vitaminas.", 
+        name: "Cachaça Ypioca Ouro 965ml", 
+        description: "Marca: Ypioca.<br>Tipo: Ouro.<br>Contém: 965ml.", 
         valor: "R$ 4,99", 
         price: 4.99, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/cachaca_ypioca_ouro_965ml.jpg"    
     },
     { 
         id: 11,
-        name: "Pão - Francês", 
-        description: "Pão francês fresco e crocante para seu café da manhã.", 
+        name: "Cigarro K-Lint Silver c/20 unidades", 
+        description: "Marca: K-Lint.<br>Unidades:20.<br>Tipo: Silver.", 
         valor: "R$ 2,50", 
         price: 2.50, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/cigarro_klint_20unidades.jpg"    
     },
     { 
         id: 12,
-        name: "Açúcar - Refinado", 
-        description: "Açúcar refinado para adoçar suas bebidas e receitas.", 
+        name: "Coca Cola Original 1,5L", 
+        description: "Refrigerante com sabor original. O recipiente de plástico contém 1,5L.", 
         valor: "R$ 3,50", 
         price: 3.50, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_garrafa_1.5l.jpg"    
     },
     { 
         id: 13,
@@ -110,7 +110,7 @@ const listaProdutos = [
         description: "Vodka Slova com teor alcoólico de 37,5% vol. Contém 970ml.", 
         valor: "R$ 15,00", 
         price: 15.00, 
-        category: "bebidas",
+        category: "destilados",
         image: "img/vodka_slova_970ml.jpg"    
     },
     { 
@@ -119,7 +119,7 @@ const listaProdutos = [
         description: "Cerveja Puro Malte. Contém 1 lata de 350ml", 
         valor: "R$ 4,50", 
         price: 4.50, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_petra_lata_350ml.jpg"    
     },
     { 
@@ -128,7 +128,7 @@ const listaProdutos = [
         description: "Cerveja Pilsen. Contém 1 lata de 350ml.", 
         valor: "R$ 3,50", 
         price: 3.50, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_skol_pilsen_lata_350ml.jpg"    
     },
     { 
@@ -137,7 +137,7 @@ const listaProdutos = [
         description: "Contém 1 garrafa contendo 330ml.", 
         valor: "R$ 8,90", 
         price: 8.90, 
-        category: "bebidas", 
+        category: "cervejas", 
         image: "img/cerveja_heineken_long_neck_garrafa_330ml.jpg"    
     },
     { 

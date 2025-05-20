@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 return produtos.sort((a, b) => b.price - a.price);
             case "price-asc":
                 return produtos.sort((a, b) => a.price - b.price);
-            case "category-alimentos":
-                return produtos.filter((p) => p.category === "alimentos");
-            case "category-bebidas":
-                return produtos.filter((p) => p.category === "bebidas");
-            case "category-carne":
-                return produtos.filter((p) => p.category === "carne");
-            case "category-higiene":
-                return produtos.filter((p) => p.category === "higiene");
+            case "category-cervejas":
+                return produtos.filter((p) => p.category === "cervejas");
+            case "category-destilados":
+                return produtos.filter((p) => p.category === "destilados");
+            case "category-refrigerantes":
+                return produtos.filter((p) => p.category === "refrigerantes");
+            case "category-variedades":
+                return produtos.filter((p) => p.category === "variedades");
             default:
                 return produtos;
         }
