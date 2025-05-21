@@ -98,7 +98,7 @@ const listaProdutos = [
     { 
         id: 12,
         name: "Coca Cola Original 1,5L", 
-        description: "Refrigerante com sabor original. O recipiente de plástico contém 1,5L.", 
+        description: "Sabor original. O recipiente de plástico contém 1,5L.", 
         valor: "R$ 3,50", 
         price: 3.50, 
         category: "refrigerantes", 
@@ -421,254 +421,425 @@ const listaProdutos = [
     },
     { 
         id: 48,
-        name: "Cerveja - Pilsen", 
-        description: "Cerveja pilsen gelada para momentos de descontração.", 
+        name: "Cerveja Brahma Chopp Pack c/12 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml.", 
         valor: "R$ 3,50", 
         price: 3.50, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_brahma_shopp_fardo_350ml.jpg"    
     },
     { 
         id: 49,
-        name: "Licor - Amarula", 
-        description: "Licor cremoso Amarula para sobremesas e drinks.", 
+        name: "Cerveja Brahma Chopp Lata 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 60,00", 
         price: 60.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_brahma_shopp_latinha_350ml.jpg"    
     },
     { 
         id: 50,
-        name: "Água com Gás - Perrier", 
-        description: "Água com gás importada Perrier para momentos sofisticados.", 
+        name: "Jack Daniel's pack c/6 Latas 350ml", 
+        description: "Contém 12 latas. Cada lata com 350ml.", 
         valor: "R$ 8,00", 
         price: 8.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/jack_daniels_fardo_lata_350ml.jpg"    
     },
     { 
         id: 51,
-        name: "Refrigerante - Fanta", 
-        description: "Refrigerante sabor laranja, doce e refrescante.", 
+        name: "Jack Daniel's pack Lata 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 4,00", 
         price: 4.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/jack_daniels_latinha_350ml.jpg"    
     },
     { 
         id: 52,
-        name: "Chá - Camomila", 
-        description: "Chá de camomila relaxante para momentos de tranquilidade.", 
-        valor: "R$ 5,00", 
-        price: 5.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        name: "Cachaça Ypioca Ouro 480ml", 
+        description: "Marca: Ypioca.<br>Tipo: Ouro.<br>Contém: 480ml.",
+        valor: "R$ 14,00", 
+        price: 14.00, 
+        category: "destilados", 
+        image: "img/cachaca_ypioca_ouro_480ml.jpg"    
     },
     { 
         id: 53,
-        name: "Suco - Detox", 
-        description: "Suco detox para desintoxicação e revitalização do corpo.", 
+        name: "Bombom Sortidos Garoto Caixa 250g", 
+        description: "Os bombons mais saborosos estão aqui.", 
         valor: "R$ 10,00", 
         price: 10.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/bombom_sortidos_garoto_caixa_250g.jpg"    
     },
     { 
         id: 54,
-        name: "Refrigerante - Sprite", 
-        description: "Refrigerante sabor limão, leve e refrescante.", 
+        name: "Engov After Citrus 250ml", 
+        description: "Ajuda na recuperação e reidratação depois de momentos intensos.", 
         valor: "R$ 4,00", 
         price: 4.00, 
-        category: "bebidas", 
-        image: "img/imgproduto196.jpg"    
+        category: "variedades", 
+        image: "img/Engov_After_Citrus_250ml.jpg"    
     },
     { 
         id: 55,
-        name: "Carne - Bovina", 
-        description: "Carne bovina fresca para churrascos e grelhados.", 
+        name: "Cerveja Budweiser Lager Pack c/6 330ml", 
+        description: "Contem 6 Long Neck com 330ml cada.", 
         valor: "R$ 25,99", 
         price: 25.99, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_budweiser_lager_pack6_330ml.jpg"    
     },
     { 
         id: 56,
-        name: "Frango - Resfriado", 
-        description: "Frango resfriado fresco para assados e grelhados.", 
+        name: "Cerveja Budweiser Lager Long Neck 330ml", 
+        description: "Contem 1 Long Neck com 330ml.", 
         valor: "R$ 12,99", 
         price: 12.99, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_budweiser_lager_long_neck_330ml.jpg"    
     },
     { 
         id: 57,
-        name: "Peixe - Tilápia", 
-        description: "Peixe tilápia fresco para grelhados e assados.", 
+        name: "Cerveja Skol Pilsen Pack c/24 300ml ", 
+        description: "Retornável. Cerveja Long Neck de 330ml cada.", 
         valor: "R$ 15,99", 
         price: 15.99, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_skol_pilsen_caixa_24_300ml.jpg"    
     },
     { 
         id: 58,
-        name: "Linguiça - Calabresa", 
-        description: "Linguiça calabresa defumada para churrascos e petiscos.", 
+        name: "Cerveja Skol 300ml", 
+        description: "Retornável. 1 cerveja Long Neck de 330ml.", 
         valor: "R$ 15,00", 
         price: 15.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_skol_long_neck_300ml.jpg"    
     },
     { 
         id: 59,
-        name: "Costela - Bovina", 
-        description: "Costela bovina para assados lentos e saborosos.", 
+        name: "Cerveja Brahma Duplo Malte Pack c/12 350ml", 
+        description: "Contém 12 latas com 350ml cada.", 
         valor: "R$ 30,00", 
         price: 30.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_brahma_duplo_malte_fardo_350ml.jpg"    
     },
     { 
         id: 60,
-        name: "Peixe - Salmão", 
-        description: "Peixe salmão fresco para grelhados e ceviches.", 
+        name: "Cerveja Brahma Duplo Malte Lata 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 50,00", 
         price: 50.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_brahma_duplo_malte_lata_350ml.jpg"    
     },
     { 
         id: 61,
-        name: "Milho - Verde", 
-        description: "Milho verde fresco para sucos ou acompanhamentos.", 
+        name: "Coca Cola Original 2L", 
+        description: "Sabor original. O recipiente de plástico contém 2L.", 
         valor: "R$ 3,50", 
         price: 3.50, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_2l.jpg"    
     },
     { 
-        id: 61,
-        name: "Trigo - Integral", 
-        description: "Farinha de trigo integral para receitas saudáveis.", 
+        id: 62,
+        name: "Coca Cola Original Pack c/6 2L", 
+        description: "2L. Sabor original. Recipiente com 6 unidades.", 
         valor: "R$ 6,00", 
         price: 6.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_fardo6_2l.jpg"    
     },
     { 
         id: 63,
-        name: "Quinoa - Branca", 
-        description: "Quinoa branca rica em proteínas e nutrientes.", 
+        name: "Coca Cola Original Pack c/6 1,5L", 
+        description: "1,5L. Sabor original. Recipiente com 6 unidades", 
         valor: "R$ 10,00", 
         price: 10.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_fardo6_1.5l.jpg"   
     },
     { 
         id: 64,
-        name: "Cuscuz - Marroquino", 
-        description: "Cuscuz marroquino para pratos exóticos e nutritivos.", 
+        name: "Coca Cola Original Pack c/12 250ml", 
+        description: "250ml. Sabor original. Recipiente com 12 unidades.", 
         valor: "R$ 8,50", 
         price: 8.50, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_fardo12_250ml.jpg"    
     },
     { 
         id: 65,
-        name: "Geleia - Morango", 
-        description: "Geleia de morango artesanal para torradas e sobremesas.", 
+        name: "Coca Cola Original 250ml", 
+        description: "250ml. Sabor original com 1 unidade.", 
         valor: "R$ 7,00", 
         price: 7.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_250ml.jpg"    
     },
     { 
         id: 66,
-        name: "Pipoca - Grãos", 
-        description: "Grãos de pipoca para snacks caseiros.", 
+        name: "Del Ricco Suco de Fruta Citricas 2L", 
+        description: "Del Ricco sabor frutas citricas 2L.", 
         valor: "R$ 5,00", 
         price: 5.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/delrico_suco_de_frutas_citricas_2l.jpg"    
     },
     { 
         id: 67,
-        name: "Leite Condensado", 
-        description: "Leite condensado para doces e sobremesas.", 
+        name: "Cabaré ICE Limão Pack c/6 275ml", 
+        description: "Contém 6 Long Neck de 275ml cada.", 
         valor: "R$ 9,00", 
         price: 9.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/cabare_ice_limao_fardo6_275ml.jpg"    
     },
     { 
         id: 68,
-        name: "Chocolate - Meio Amargo", 
-        description: "Chocolate meio amargo para receitas ou consumo direto.", 
+        name: "Cabaré ICE Limão 275ml", 
+        description: "Contém 1 Long Neck de 275ml.", 
         valor: "R$ 12,00", 
         price: 12.00, 
-        category: "alimentos", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/cabare_ice_limao_long_neck_275ml.jpg"    
     },
     { 
         id: 69,
-        name: "Álcool Gel - 70%", 
-        description: "Álcool gel antisséptico para higienização das mãos.", 
+        name: "Crystal ICE Frutas Vermelhas 275ml", 
+        description: "Contém 1 Long Neck de 275ml.", 
         valor: "R$ 8,00", 
         price: 8.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "destilados", 
+        image: "img/crystal_ice_frutas_vermelhas_275ml.jpg"    
     },
     { 
         id: 70,
-        name: "Sabonete Íntimo - Femfresh", 
-        description: "Sabonete íntimo para cuidados diários.", 
+        name: "Pepsi Original Pack c/6 2L", 
+        description: "Contém 6 unidades de 2L cada.", 
         valor: "R$ 15,00", 
         price: 15.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/pepsi_fardo6_2L.jpg"    
     },
     { 
         id: 71,
-        name: "Desinfetante - Pinho", 
-        description: "Desinfetante com aroma de pinho para limpeza geral.", 
+        name: "Pepsi Original 2L", 
+        description: "Contém 1 unidade de 2L.", 
         valor: "R$ 10,00", 
         price: 10.00, 
-        category: "higiene", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/pepsi_original_2l.jpg"    
     },
     { 
         id: 72,
-        name: "Linguiça - Toscana", 
-        description: "Linguiça toscana temperada para grelhados.", 
+        name: "Coca Cola Zero Açucar pack c/12 350ml", 
+        description: "Contém 12 latas com 350ml cada.", 
         valor: "R$ 18,00", 
         price: 18.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_sem_acucar_fardo12_350ml.jpg"   
     },
     { 
         id: 73,
-        name: "Frango - Desossado", 
-        description: "Peito de frango desossado para preparações rápidas.", 
+        name: "Coca Cola Zero Açucar 350ml", 
+        description: "Contém 1 lata com 350ml.", 
         valor: "R$ 14,99", 
         price: 14.99, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_sem_acucar_lata_350ml.jpg"    
     },
     { 
         id: 74,
-        name: "Paleta - Suína", 
-        description: "Paleta suína ideal para assados lentos.", 
+        name: "Coca Cola Original Pack c/12 350ml", 
+        description: "Contém 12 unidades com 350ml cada.", 
         valor: "R$ 22,00", 
         price: 22.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_fardo12_350ml.jpg"    
     },
     { 
         id: 75,
-        name: "Filé Mignon - Bovino", 
-        description: "Filé mignon bovino para cortes refinados e churrascos.", 
+        name: "Coca Cola Original 350ml", 
+        description: "Contém 1 unidade com 350ml.", 
         valor: "R$ 45,00", 
         price: 45.00, 
-        category: "carne", 
-        image: "img/imgproduto196.jpg"    
-    }
+        category: "refrigerantes", 
+        image: "img/coca_cola_original_lata_350ml.jpg"    
+    },
+    { 
+        id: 76,
+        name: "Sprite Limão Pack c/6 350ml", 
+        description: "Contém 6 unidades com 350ml cada.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "refrigerantes", 
+        image: "img/sprite_limao_fardo6_350ml.jpg"    
+    },
+    { 
+        id: 77,
+        name: "Sprite Limão 350ml", 
+        description: "Contém 1 unidade com 350ml.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "refrigerantes", 
+        image: "img/sprite_limao_lata_350ml.jpg"    
+    },
+    { 
+        id: 78,
+        name: "Energético Magneto 2L", 
+        description: "Contém 1 unidade com 2L.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/energetico_magneto_2l.jpg"    
+    },
+    { 
+        id: 79,
+        name: "Refrigerante Delrio guaraná Pack c/12 250ml", 
+        description: "Contém 12 unidades com 350ml cada.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_fardo_250ml.jpg"    
+    },
+    { 
+        id: 80,
+        name: "Refrigerante Delrio Guaraná 250ml", 
+        description: "Contém 1 unidade com 250ml.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_250ml.jpg"    
+    },
+    { 
+        id: 81,
+        name: "Trident menta 8g", 
+        description: "Contém 1 unidade com 8g.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/trident_menta_unidade_8g.jpg"    
+    },
+    { 
+        id: 82,
+        name: "Cherry Pop Cereja c/50 unidades", 
+        description: "Contém 1 pacote com 50 unidades.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cherry_pop_cereja_50unidades.jpg"    
+    },
+    { 
+        id: 83,
+        name: "Cherry Pop Cereja 1 unidade", 
+        description: "Contém 1 unidade.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cherry_pop_cereja_1_unidade.jpg"    
+    },
+    { 
+        id: 84,
+        name: "Cachaça Cabaré Prata 700ml", 
+        description: "Contém 1 unidade com 700ml. Teor alcoólico 38% vol.", 
+        valor: "R$ 35,00", 
+        price: 35.00, 
+        category: "destilados", 
+        image: "img/cachaca_cabare_prata_700ml.jpg"    
+    },
+    { 
+        id: 85,
+        name: "Cachaça Cabaré Ouro 700ml", 
+        description: "Contém 1 unidade com 700ml. Teor alcoólico 38% vol.", 
+        valor: "R$ 42,00", 
+        price: 42.00, 
+        category: "destilados", 
+        image: "img/cachaca_cabare_ouro_700ml.jpg"    
+    },
+    { 
+        id: 86,
+        name: "Cigarro Gift c/20 unidades", 
+        description: "Marca: Gift.<br>Unidades: 20.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_gift_20unidades.jpg"    
+    },
+    { 
+        id: 87,
+        name: "Cigarro Cretec Menthol c/20 unidades", 
+        description: "Marca: Cretec.<br>Unidades: 20.<br>Tipo: Menthol", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_cretec_menthol_20unidades.jpg"    
+    },
+    { 
+        id: 88,
+        name: "Cigarro Gudang Garam c/20 unidades", 
+        description: "Marca: Gudang Garam.<br>Unidades: 20.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_gudang_garam_20unidades.jpg"    
+    },
+    { 
+        id: 89,
+        name: "Cigarro Clean c/20 unidades", 
+        description: "Marca: Clean.<br>Unidades: 20.<br> Tipo: by Click", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_clean_20unidades.jpg"    
+    },
+    { 
+        id: 90,
+        name: "Cigarro Dunhill (Calton) c/20 unidades", 
+        description: "Marca: Dunhill.<br>Unidades: 20.<br> Tipo: Double Refresh", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_dunhill_20unidades.jpg"    
+    },
+    { 
+        id: 91,
+        name: "Cigarro Lucky Strike c/20 unidades", 
+        description: "Marca: Lucky Strike.<br>Unidades: 20.<br> Tipo: Fresh Double Ice X", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_lucky_strike_20unidades.jpg"  
+    },
+    { 
+        id: 92,
+        name: "Cigarro Rothmans Blue Global c/20 unidades", 
+        description: "Marca: Rothmans.<br>Unidades: 20.<br> Tipo: Blue Global",
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_rothmans_blue_global_20unidades.jpg"    
+    },
+    { 
+        id: 93,
+        name: "Cigarro Rothmans Classic Blue c/20 unidades", 
+        description: "Marca: Rothmans.<br>Unidades: 20.<br> Tipo: Classic Blue",
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_rothmans_classic_blue_20unidades.jpg"
+    },
+    { 
+        id: 94,
+        name: "Cigarro Rothmans Blue c/20 unidades", 
+        description: "Marca: Rothmans.<br>Unidades: 20.<br> Tipo: Blue",
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_rothmans_blue_20unidades.jpg"
+    },
 ];
