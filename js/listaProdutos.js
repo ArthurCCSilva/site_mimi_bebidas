@@ -250,12 +250,12 @@ const listaProdutos = [
     },
     { 
         id: 29,
-        name: "Grand Old Parr 1L", 
-        description: "Marca: Old Parr.<br>Tipo de álcool: Blended whiskey.<br>Sabor: Baunilha.",
+        name: "Whisky Red Label 1L", 
+        description: "Whisky Red Label Johnnie Walker 1L",
         valor: "R$ 160,00", 
         price: 160.00, 
         category: "destilados", 
-        image: "img/grand_old_parr_1l.jpg"    
+        image: "img/whisky_red_label_1l.jpg"    
     },
     { 
         id: 30,
@@ -426,7 +426,7 @@ const listaProdutos = [
         valor: "R$ 3,50", 
         price: 3.50, 
         category: "cervejas", 
-        image: "img/cerveja_brahma_shopp_fardo_350ml.jpg"    
+        image: "img/cerveja_brahma_chopp_fardo_350ml.jpg"    
     },
     { 
         id: 49,
@@ -435,7 +435,7 @@ const listaProdutos = [
         valor: "R$ 60,00", 
         price: 60.00, 
         category: "cervejas", 
-        image: "img/cerveja_brahma_shopp_latinha_350ml.jpg"    
+        image: "img/cerveja_brahma_chopp_latinha_350ml.jpg"    
     },
     { 
         id: 50,
@@ -475,12 +475,12 @@ const listaProdutos = [
     },
     { 
         id: 54,
-        name: "Engov After Citrus 250ml", 
-        description: "Ajuda na recuperação e reidratação depois de momentos intensos.", 
+        name: "Sextooo abacaxi 10ml", 
+        description: "Conhecido popularmente como Engov.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "variedades", 
-        image: "img/Engov_After_Citrus_250ml.jpg"    
+        image: "img/sextooo_10ml.jpg"    
     },
     { 
         id: 55,
@@ -718,7 +718,7 @@ const listaProdutos = [
     },
     { 
         id: 81,
-        name: "Trident menta 8g", 
+        name: "Chiclete Trident Menta Unidade 8g", 
         description: "Contém 1 unidade com 8g.", 
         valor: "R$ 45,00", 
         price: 45.00, 
@@ -871,20 +871,191 @@ const listaProdutos = [
     },
     { 
         id: 98,
-        name: "Brahma Shopp Pach c23/ 330ml (Natural)", 
+        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Natural)", 
         description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 5,00", 
         price: 5.00, 
         category: "cervejas", 
-        image: "img/cerveja_brahma_shopp_long_neck_fardo23_330ml.jpg"    
+        image: "img/cerveja_brahma_chopp_long_neck_fardo23_330ml.jpg"    
     },
     { 
         id: 99,
-        name: "Brahma Shopp Pach c23/ 330ml (Gelada)", 
+        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.",
         valor: "R$ 5,00", 
         price: 5.00, 
         category: "cervejas", 
-        image: "img/cerveja_brahma_shopp_long_neck_fardo23_gelado_330ml.jpg"   
+        image: "img/cerveja_brahma_chopp_long_neck_fardo23_gelado_330ml.jpg"   
+    },
+    { 
+        id: 100,
+        name: "Cerveja Bohemia Pach c/23 300ml (Natural)", 
+        description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_bohemia_long_neck_fardo23_natural_300ml.jpg"   
+    },
+    { 
+        id: 101,
+        name: "Cerveja Bohemia Pach c/23 300ml (Gelada)", 
+        description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_bohemia_long_neck_fardo23_gelada_300ml.jpg"   
+    },
+    { 
+        id: 102,
+        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Gelada)", 
+        description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_brahma_duplo_malte_long_neck_fardo23_natural_300ml.jpg"   
+    },
+    { 
+        id: 103,
+        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Gelada)", 
+        description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_brahma_duplo_malte_long_neck_fardo23_gelada_300ml.jpg"   
+    },
+    { 
+        id: 104,
+        name: "Refrigerante Delrio Guaraná 1L", 
+        description: "Refrigerante de sabor guaraná.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_1l.jpg"    
+    },
+    { 
+        id: 105,
+        name: "Refrigerante Guaraná Antarctica 2L", 
+        description: "Refrigerante de sabor Garaná.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_guarana_antarctica_2L.jpg"    
+    },
+    { 
+        id: 106,
+        name: "Whisky Old Parr 1L", 
+        description: "Marca: Old Parr.<br>Tipo de álcool: Blended whiskey.<br>Sabor: Baunilha.",
+        valor: "R$ 160,00", 
+        price: 160.00,
+        category: "destilados", 
+        image: "img/whisky_old_parr_1l.jpg"    
+    },
+    { 
+        id: 107,
+        name: "Energético Moster Traticional Latão 473ml", 
+        description: "Impulsiona a atingir o seu melhor desempenho.",
+        valor: "R$ 16,00", 
+        price: 16.00,
+        category: "variedades", 
+        image: "img/energetico_monster_latao_473ml.jpg"    
+    },
+    { 
+        id: 108,
+        name: "Cigarro Dunhill Prata (Calton) c/20 unidades", 
+        description: "Marca: Dunhill.<br>Unidades: 20.<br> Tipo: Prata", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/cigarro_dunhill_prata_20unidades.jpg"    
+    },
+    { 
+        id: 109,
+        name: "Isqueiro Bic Maxi", 
+        description: "Marca: Bic.<br>Unidade: 1.<br> Cores: Variadas", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/isqueiro_bic_maxi.jpg"    
+    },
+    { 
+        id: 110,
+        name: "Chiclete Trident Menta Caixa c/21", 
+        description: "Contém 21 unidades com 8g cada.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "variedades", 
+        image: "img/trident_menta_caixa21.jpg"    
+    },
+    { 
+        id: 112,
+        name: "Skol Beats Senses Pack c/6 313ml", 
+        description: "Contém 6 unidades com 313ml cada.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "cervejas", 
+        image: "img/cerveja_skol_beats_senses_fardo6_313ml.jpg"    
+    },
+    { 
+        id: 113,
+        name: "Skol Beats Senses Long Neck 313ml", 
+        description: "Contém 1 unidade com 313ml.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "cervejas", 
+        image: "img/cerveja_skol_beats_senses_long_nesck_313ml.jpg"    
+    },
+    { 
+        id: 114,
+        name: "Skol Beats Red Mix Pack c/6 269ml", 
+        description: "Contém 6 unidades com 269ml cada.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "cervejas", 
+        image: "img/cerveja_skol_beats_red_mix_fardo6_269ml.jpg"    
+    },
+    { 
+        id: 115,
+        name: "Skol Beats Red Mix Long Neck 269ml", 
+        description: "Contém 1 unidade com 269ml.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "cervejas", 
+        image: "img/cerveja_skol_beats_red_mix_long_neck_269ml.jpg"    
+    },
+    { 
+        id: 116,
+        name: "Vinho O Gaucho 750ml", 
+        description: "Vinho: Suave. Teor alcoólico de 10% vol.", 
+        valor: "R$ 6,00", 
+        price: 6.00, 
+        category: "variedades", 
+        image: "img/vinho_o_gaucho_suave_750ml.jpg"
+    },
+    { 
+        id: 117,
+        name: "Coca Cola Zero Açucar 1,5L", 
+        description: "Contém 1 unidade com 1,5L.", 
+        valor: "R$ 18,00", 
+        price: 18.00, 
+        category: "refrigerantes", 
+        image: "img/coca_cola_sem_acucar_garrafa_1.5l.jpg"
+    },
+    { 
+        id: 118,
+        name: "Água Mineral Santa Sophia pach c/12 500ml", 
+        description: "Contém 12 unidades com 500ml cada.", 
+        valor: "R$ 18,00", 
+        price: 18.00, 
+        category: "variedades", 
+        image: "img/agua_mineral_santa_sophia_500ml.jpg"
+    },
+    { 
+        id: 119,
+        name: "Água com Gás Indaiá pach c/12 500ml", 
+        description: "Contém 12 unidades com 500ml cada.", 
+        valor: "R$ 18,00", 
+        price: 18.00, 
+        category: "variedades", 
+        image: "img/agua_com_gas_indaia_500ml.jpg"
     },
 ];
