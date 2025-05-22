@@ -502,26 +502,26 @@ const listaProdutos = [
     },
     { 
         id: 57,
-        name: "Cerveja Skol Pilsen Pack c/24 300ml ", 
-        description: "Retornável. Cerveja Long Neck de 330ml cada.", 
+        name: "Cerveja Skol Pilsen Pack c/23 300ml (Natural)", 
+        description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 15,99", 
         price: 15.99, 
         category: "cervejas", 
-        image: "img/cerveja_skol_pilsen_caixa_24_300ml.jpg"    
+        image: "img/cerveja_skol_pilsen_long_neck_300ml.jpg"    
     },
     { 
         id: 58,
-        name: "Cerveja Skol 300ml", 
-        description: "Retornável. 1 cerveja Long Neck de 330ml.", 
+        name: "Cerveja Skol Pilsen Pack c/23 300ml (Gelada)", 
+        description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 15,00", 
         price: 15.00, 
         category: "cervejas", 
-        image: "img/cerveja_skol_long_neck_300ml.jpg"    
+        image: "img/cerveja_skol_pilsen_long_neck_gelada_300ml.jpg"    
     },
     { 
         id: 59,
         name: "Cerveja Brahma Duplo Malte Pack c/12 350ml", 
-        description: "Contém 12 latas com 350ml cada.", 
+        description: "Temperatura: Gelada. Long Neck. Retornável", 
         valor: "R$ 30,00", 
         price: 30.00, 
         category: "cervejas", 
@@ -574,21 +574,21 @@ const listaProdutos = [
     },
     { 
         id: 65,
-        name: "Coca Cola Original 250ml", 
-        description: "250ml. Sabor original com 1 unidade.", 
+        name: "Cerveja Corona Pack c/6 330ml", 
+        description: "Contém 6 Lonk Neck, cada unidade com 330ml.", 
         valor: "R$ 7,00", 
         price: 7.00, 
-        category: "refrigerantes", 
-        image: "img/coca_cola_original_250ml.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_corona_fardo6_330ml.jpg"    
     },
     { 
         id: 66,
-        name: "Del Ricco Suco de Fruta Citricas 2L", 
-        description: "Del Ricco sabor frutas citricas 2L.", 
+        name: "Dell Valle Frut Fruta Cítricas 1,5L", 
+        description: "Dell Ricco sabor frutas ctíricas 1,5L.", 
         valor: "R$ 5,00", 
         price: 5.00, 
         category: "refrigerantes", 
-        image: "img/delrico_suco_de_frutas_citricas_2l.jpg"    
+        image: "img/dell_valle_frut_frutas_citricas_1.5l.jpg"    
     },
     { 
         id: 67,
@@ -646,12 +646,12 @@ const listaProdutos = [
     },
     { 
         id: 73,
-        name: "Coca Cola Zero Açucar 350ml", 
-        description: "Contém 1 lata com 350ml.", 
+        name: "Cerveja Corona Lonk Neck 330ml", 
+        description: "Contém 1 Long Neck com 330ml.", 
         valor: "R$ 14,99", 
         price: 14.99, 
-        category: "refrigerantes", 
-        image: "img/coca_cola_sem_acucar_lata_350ml.jpg"    
+        category: "cervejas",
+        image: "img/cerveja_corona_lonk_neck_330ml.jpg"    
     },
     { 
         id: 74,
@@ -664,12 +664,12 @@ const listaProdutos = [
     },
     { 
         id: 75,
-        name: "Coca Cola Original 350ml", 
-        description: "Contém 1 unidade com 350ml.", 
+        name: "Cerveja Stella Artois Pack c/6 330ml", 
+        description: "Contém 6 Long Neck, cada unidade com 330ml.", 
         valor: "R$ 45,00", 
         price: 45.00, 
-        category: "refrigerantes", 
-        image: "img/coca_cola_original_lata_350ml.jpg"    
+        category: "cervejas", 
+        image: "img/cerveja_stella_artois_pack6_330ml.jpg"    
     },
     { 
         id: 76,
@@ -841,5 +841,50 @@ const listaProdutos = [
         price: 45.00, 
         category: "variedades", 
         image: "img/cigarro_rothmans_blue_20unidades.jpg"
+    },
+    { 
+        id: 95,
+        name: "Cerveja Stella Artois Lonk Neck 330ml", 
+        description: "Contém 1 Long Neck, com 330ml.", 
+        valor: "R$ 45,00", 
+        price: 45.00, 
+        category: "cervejas", 
+        image: "img/cerveja_stella_artois_long_neck_330ml.jpg"    
+    },
+    { 
+        id: 96,
+        name: "Cerveja Spaten Pack c/6 355ml", 
+        description: "Contém 6 Long Neck. Cada unidade com 355ml.", 
+        valor: "R$ 35,00", 
+        price: 35.00, 
+        category: "cervejas", 
+        image: "img/cerveja_spaten_munich_fardo6_355ml.jpg"    
+    },
+    { 
+        id: 97,
+        name: "Cerveja Spaten Long Neck 355ml", 
+        description: "Contém 1 Long Neck com 355ml.", 
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_spaten_long_neck_355ml.jpg"    
+    },
+    { 
+        id: 98,
+        name: "Brahma Shopp Pach c23/ 330ml (Natural)", 
+        description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_brahma_shopp_long_neck_fardo23_330ml.jpg"    
+    },
+    { 
+        id: 99,
+        name: "Brahma Shopp Pach c23/ 330ml (Gelada)", 
+        description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.",
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas", 
+        image: "img/cerveja_brahma_shopp_long_neck_fardo23_gelado_330ml.jpg"   
     },
 ];
