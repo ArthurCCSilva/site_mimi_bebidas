@@ -90,6 +90,24 @@ const listaProdutos = [
         image: "img/dell_valle_frut_frutas_citricas_1.5l.jpg"    
     },
     { 
+        id: 69,
+        name: "Refrigerante Delrio Cola pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_cola_fardo12_2l.jpg"    
+    },
+    { 
+        id: 70,
+        name: "Refrigerante Delrio Guaraná pack c/12 1L", 
+        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        valor: "R$ 26,00", 
+        price: 26.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_fardo12_1l.jpg"    
+    },
+    { 
         id: 71,
         name: "Pepsi Original 2L", 
         description: "Contém 1 unidade de 2L.", 
@@ -106,6 +124,15 @@ const listaProdutos = [
         price: 40.00, 
         category: "refrigerantes", 
         image: "img/coca_cola_sem_acucar_fardo12_350ml.jpg"   
+    },
+    { 
+        id: 73,
+        name: "Refrigerante Delrio Laranja pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_laranja_fardo12_2l.jpg"    
     },
     { 
         id: 74,
@@ -126,6 +153,15 @@ const listaProdutos = [
         image: "img/sprite_limao_fardo6_350ml.jpg"    
     },
     { 
+        id: 77,
+        name: "Refrigerante Delrio Uva pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00,
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_uva_fardo12_2l.jpg"   
+    },
+    { 
         id: 79,
         name: "Refrigerante Delrio Guaraná Pack (Natural) c/12 250ml", 
         description: "Contém 12 unidades com 350ml cada.", 
@@ -133,6 +169,15 @@ const listaProdutos = [
         price: 20.00, 
         category: "refrigerantes", 
         image: "img/refrigerante_delrio_guarana_fardo_250ml.jpg"    
+    },
+    { 
+        id: 80,
+        name: "Refrigerante Delrio Guaraná pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_fardo12_2l.jpg"    
     },
     { 
         id: 104,

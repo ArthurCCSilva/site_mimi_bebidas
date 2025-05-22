@@ -144,6 +144,15 @@ const listaProdutos = [
         image: "img/cerveja_brahma_chopp_latinha_350ml.jpg"    
     },
     { 
+        id: 51,
+        name: "Cerveja Itaipava Pack (Natural)c/24 300ml", 
+        description: "Contém 24 long Neck com 300ml cada.", 
+        valor: "R$ 55,00", 
+        price: 55.00, 
+        category: "cervejas", 
+        image: "img/cerveja_itaipava_fardo_long_neck_natural_300ml.jpg"    
+    },
+    { 
         id: 55,
         name: "Cerveja Budweiser Lager Pack c/6 330ml", 
         description: "Contem 6 Long Neck com 330ml cada.", 

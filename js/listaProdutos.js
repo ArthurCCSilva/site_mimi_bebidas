@@ -446,15 +446,15 @@ const listaProdutos = [
         category: "destilados", 
         image: "img/vodka_slova_limao_965ml.jpg"
     },
-    /*retirar{ 
+    { 
         id: 51,
-        name: "Jack Daniel's pack Lata 350ml", 
-        description: "Contém 1 lata com 350ml.", 
-        valor: "R$ 4,00", 
-        price: 4.00, 
-        category: "destilados", 
-        image: "img/jack_daniels_latinha_350ml.jpg"    
-    },*/
+        name: "Cerveja Itaipava Pack (Natural)c/24 300ml", 
+        description: "Contém 24 long Neck com 300ml cada.", 
+        valor: "R$ 55,00", 
+        price: 55.00, 
+        category: "cervejas", 
+        image: "img/cerveja_itaipava_fardo_long_neck_natural_300ml.jpg"    
+    },
     { 
         id: 52,
         name: "Cachaça Ypioca Ouro 480ml", 
@@ -608,24 +608,24 @@ const listaProdutos = [
         category: "destilados", 
         image: "img/cabare_ice_limao_long_neck_275ml.jpg"    
     },
-    /*retirar{ 
+    { 
         id: 69,
-        name: "Crystal ICE Frutas Vermelhas 275ml", 
-        description: "Contém 1 Long Neck de 275ml.", 
-        valor: "R$ 8,00", 
-        price: 8.00, 
-        category: "destilados", 
-        image: "img/crystal_ice_frutas_vermelhas_275ml.jpg"    
-    },*/
-    /*retirar{ 
-        id: 70,
-        name: "Pepsi Original Pack c/6 2L", 
-        description: "Contém 6 unidades de 2L cada.", 
-        valor: "R$ 15,00", 
-        price: 15.00, 
+        name: "Refrigerante Delrio Cola pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
         category: "refrigerantes", 
-        image: "img/pepsi_fardo6_2L.jpg"    
-    },*/
+        image: "img/refrigerante_delrio_cola_fardo12_2l.jpg"    
+    },
+    { 
+        id: 70,
+        name: "Refrigerante Delrio Guaraná pack c/12 1L", 
+        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        valor: "R$ 26,00", 
+        price: 26.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_guarana_fardo12_1l.jpg"    
+    },
     { 
         id: 71,
         name: "Pepsi Original 2L", 
@@ -644,15 +644,15 @@ const listaProdutos = [
         category: "refrigerantes", 
         image: "img/coca_cola_sem_acucar_fardo12_350ml.jpg"   
     },
-    /*retirar{ 
+    { 
         id: 73,
-        name: "Cerveja Corona Lonk Neck 330ml", 
-        description: "Contém 1 Long Neck com 330ml.", 
-        valor: "R$ 14,99", 
-        price: 14.99, 
-        category: "cervejas",
-        image: "img/cerveja_corona_lonk_neck_330ml.jpg"    
-    },*/
+        name: "Refrigerante Delrio Laranja pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_delrio_laranja_fardo12_2l.jpg"    
+    },
     { 
         id: 74,
         name: "Coca Cola Original Pack (Natural) c/12 350ml", 
@@ -680,15 +680,15 @@ const listaProdutos = [
         category: "refrigerantes", 
         image: "img/sprite_limao_fardo6_350ml.jpg"    
     },
-    /*{ 
+    { 
         id: 77,
-        name: "Sprite Limão 350ml", 
-        description: "Contém 1 unidade com 350ml.", 
-        valor: "R$ 45,00", 
-        price: 45.00, 
+        name: "Refrigerante Delrio Uva pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00,
         category: "refrigerantes", 
-        image: "img/sprite_limao_lata_350ml.jpg"    
-    },*/
+        image: "img/refrigerante_delrio_uva_fardo12_2l.jpg"   
+    },
     { 
         id: 78,
         name: "Energético Magneto 2L", 
@@ -707,15 +707,15 @@ const listaProdutos = [
         category: "refrigerantes", 
         image: "img/refrigerante_delrio_guarana_fardo_250ml.jpg"    
     },
-    /*retirar{ 
+    { 
         id: 80,
-        name: "Refrigerante Delrio Guaraná 250ml", 
-        description: "Contém 1 unidade com 250ml.", 
-        valor: "R$ 45,00", 
-        price: 45.00, 
+        name: "Refrigerante Delrio Guaraná pack c/12 2L", 
+        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        valor: "R$ 40,00", 
+        price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_guarana_250ml.jpg"    
-    },*/
+        image: "img/refrigerante_delrio_guarana_fardo12_2l.jpg"    
+    },
     { 
         id: 81,
         name: "Chiclete Trident Menta Unidade 8g", 
