@@ -15,18 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
             const div = document.createElement("div");
             div.classList.add("card", "mb-3");
             div.innerHTML = `
-                <div class="card-body d-flex justify-content-between align-items-center">
-                    <div class="col-7">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
                         <h5 class="card-title">${produto.name}</h5>
                         <p class="card-text">Preço unitário: R$${produto.price.toFixed(2)}</p>
                         <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
                     </div>
-                    <div class="col-5 d-flex justify-content-end">
-                        <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
-                        <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
-                        <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
+                    <div class="col-12 col-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
+                            <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
+                            <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
+                        </div>
                     </div>
                 </div>
+
+                
+
             `;
             listaCarrinho.appendChild(div);
             total += produto.price * produto.quantidade; // Calcula o total
