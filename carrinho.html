@@ -23,14 +23,61 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">PRODUTOS EM GERAL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ALIMENTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bebidas.html">BEBIDAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="carne.html">CARNE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="higiene.html">HIGIENE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cervejas.html">CERVEJAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destilados.html">DESTILADOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="refrigerantes.html">REFRIGERANTES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="variedades.html">VARIEDADES</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Carousel -->
+    <header class="container ">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/propaganda/fundo1.jpg" class="d-block w-100 img-fluid d-none d-md-block" alt="Slide 1"><!--Grande-->
+                    <img src="img/propaganda/fundo1.jpg" class="d-block w-100 img-fluid d-block d-md-none" alt="Slide 1"><!--pequeno-->
+                    <div class="carousel-caption d-block d-md-block">
+                        <a class="btn btn-warning btn-sm btn-bgi" href="#" role="button">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/propaganda/connect_banner_grande.jpg" class="d-block w-100 img-fluid d-none d-md-block" alt="Slide 1"><!--Grande-->
+                    <img src="img/propaganda/connect_banner_pq.jpg" class="d-block w-100 img-fluid d-block d-md-none" alt="Slide 1"><!--pequeno-->
+                    <div class="carousel-caption d-block d-md-block">
+                        <!--<a class="btn btn-primary btn-sm" href="#" role="button">Saiba Mais</a>-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/propaganda/mimi_bebidas_banner_grande.jpg" class="d-block w-100 img-fluid d-none d-md-block" alt="Slide 1"><!--Grande-->
+                    <img src="img/propaganda/mimi_bebidas_banner_pq.jpg" class="d-block w-100 img-fluid d-block d-md-none" alt="Slide 1"><!--pequeno-->
+                    <div class="carousel-caption d-block d-md-block">
+                        <!--<a class="btn btn-primary btn-sm" href="#" role="button">Saiba Mais</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        
+    </header>
 
     <div class="container mt-4">
         <h1 class="text-center">Carrinho de Compras</h1>

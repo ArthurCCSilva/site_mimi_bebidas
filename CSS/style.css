@@ -59,7 +59,7 @@ body {
     align-items: center;     /* Centraliza o conteúdo verticalmente */
     justify-content: center; /* Centraliza o texto dentro do botão */
 }
-
+/*CARRINHO DE COMPRAS*/
 .produtocarrinho{
     width: 50%;
 }
@@ -80,7 +80,6 @@ body {
     }
 }
 
-
 p.truncate-4l {
     display: -webkit-box;
     -webkit-line-clamp: 4; /* Limita a 4 linhas */
@@ -88,6 +87,7 @@ p.truncate-4l {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 /* Fixar o botão no canto inferior direito */
 /* Estilo para o botão flutuante */
@@ -110,8 +110,12 @@ p.truncate-4l {
 }
 
 /* Estilo para o ícone */
-.icon-white {
-    color: #ffffff; /* Cor branca */
+.icon-yellow {
+    color: #eeff01; /* Cor amarela */
     font-size: 2rem; /* Tamanho do ícone */
+}
+
+.btn-alterado {
+    background-color: black !important;
 }
 /*footer*/

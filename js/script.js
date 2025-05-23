@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         switch (criterio) {
             case "price-desc":
                 return produtos.sort((a, b) => b.price - a.price);
+                
             case "price-asc":
                 return produtos.sort((a, b) => a.price - b.price);
             case "category-cervejas":

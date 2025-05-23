@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
             div.classList.add("card", "mb-3");
             div.innerHTML = `
                 <div class="card-body d-flex justify-content-between align-items-center">
-                    <div>
+                    <div class="col-7">
                         <h5 class="card-title">${produto.name}</h5>
                         <p class="card-text">Preço unitário: R$${produto.price.toFixed(2)}</p>
                         <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
                     </div>
-                    <div>
+                    <div class="col-5 d-flex justify-content-end">
                         <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
                         <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
                         <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Função para enviar a lista para o WhatsApp
     function enviarParaWhatsApp(total) {
         const formaPagamento = document.getElementById("forma-pagamento").value;
-        let mensagem = "🛒 *Lista de Compras* 🛒\n\n";
+        let mensagem = "🛒 *Lista de Produtos - MIMI BEBIDAS* 🛒\n\n";
         // Adiciona os detalhes dos produtos
         carrinho.forEach((produto) => {
             const subtotal = produto.price * produto.quantidade;
@@ -95,11 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
         mensagem += `*Forma de Pagamento:* ${formatarFormaPagamento(formaPagamento)}\n`;
         // Se a forma de pagamento for Pix, adiciona o número do Pix e o QR Code
         if (formaPagamento === "pix") {
-            const numeroPix = "123.456.789-00"; // Substitua pelo número real do Pix
+            const numeroPix = "Após confirmar seu pedido, irei enviar o pix para depósito."; // Substitua pelo número real do Pix
             mensagem += `\n*Chave Pix:* ${numeroPix}\n`;
         }
         // Cria o link do WhatsApp
-        const url = `https://wa.me/5588993503686?text=${encodeURIComponent(mensagem)}`;
+        const url = `https://wa.me/5588993502977?text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
 
         // Chama a função para deletar os produtos após o envio
