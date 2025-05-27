@@ -448,7 +448,7 @@ const listaProdutos = [
     },
     { 
         id: 51,
-        name: "Cerveja Itaipava Pack (Natural)c/24 300ml", 
+        name: "Cerveja Itaipava Pack (Natural) c/24 300ml", 
         description: "Contém 24 long Neck com 300ml cada.", 
         valor: "R$ 55,00", 
         price: 55.00, 
