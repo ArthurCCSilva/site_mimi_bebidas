@@ -122,4 +122,63 @@ p.truncate-4l {
 .btn-alterado {
     background-color: black !important;
 }
-/*footer*/
+/*FOOTER*/
+footer{
+    margin-top: 40px;
+}
+
+.footer-top{
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--c-lili-4);
+}
+
+.footer-bottom{
+    padding: 25px;
+    padding-bottom: 25px;
+}
+
+.bg-footer{
+    background-color: #2e1e35;
+}
+
+footer li,
+footer p,
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+footer ul{
+    padding-left: 0;
+}
+
+
+footer ul,
+footer li{
+    list-style: none;
+}
+
+footer .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-lili-4);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.sociais-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1cf00;
+    color: black;
+    border-radius: 100px;
+}
+
+.sociais-icons a:hover{
+    background-color: rgb(22, 22, 22);
+    color: #cec000;
+}
