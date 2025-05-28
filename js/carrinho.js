@@ -2,15 +2,59 @@ document.addEventListener("DOMContentLoaded", () => {
     const listaCarrinho = document.getElementById("lista-carrinho");
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-    // Função para renderizar o carrinho
+    // 🛠️ Garante que as quantidades mínimas sejam respeitadas ao carregar a página
+    function garantirQuantidadesMinimas() {
+        carrinho.forEach(produto => {
+            const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
+            if (produto.quantidade < quantidadeMinima) {
+                produto.quantidade = quantidadeMinima;
+            }
+        });
+        
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    }
+
+    garantirQuantidadesMinimas(); // 🔥 Chamada aqui para garantir as quantidades mínimas antes da renderização
+
+    renderizarCarrinho();
+
+
+    // 🔄 Função única para alterar quantidade (+ ou -)
+    window.alterarQuantidade = function(index, valor) {
+        const produto = carrinho[index];
+        if (!produto) return;
+
+        const novaQuantidade = produto.quantidade + valor;
+        const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
+
+        if (novaQuantidade < quantidadeMinima) {
+            alert(`🚫 A quantidade mínima para ${produto.name} é ${quantidadeMinima} unidades.`);
+            return;
+        }
+
+        produto.quantidade = novaQuantidade;
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        renderizarCarrinho();
+    };
+
+    // 🚫 Função para remover um produto do carrinho
+    window.removerProduto = function(index) {
+        carrinho.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        renderizarCarrinho();
+    };
+
+    // 🛒 Renderiza o carrinho na tela
     function renderizarCarrinho() {
-        listaCarrinho.innerHTML = ""; // Limpa o conteúdo anterior
+        listaCarrinho.innerHTML = "";
         if (carrinho.length === 0) {
             listaCarrinho.innerHTML = "<p>O carrinho está vazio.</p>";
             return;
         }
+
         let total = 0;
-        // Renderiza cada produto no carrinho
+
         carrinho.forEach((produto, index) => {
             const div = document.createElement("div");
             div.classList.add("card", "mb-3");
@@ -19,24 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="col-12 col-md-7">
                         <h5 class="card-title">${produto.name}</h5>
                         <p class="card-text">Preço unitário: R$${produto.price.toFixed(2)}</p>
+                        <p>Quantidade mínima: ${quantidadesMinimas[produto.id] || 1}</p>
                         <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
                     </div>
                     <div class="col-12 col-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
-                            <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
-                            <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
-                        </div>
+                        <button class="btn btn-sm btn-danger" onclick="removerProduto(${index})">Remover</button>
+                        <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, -1)">-</button>
+                        <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
                     </div>
                 </div>
-
-                
-
             `;
             listaCarrinho.appendChild(div);
-            total += produto.price * produto.quantidade; // Calcula o total
+            total += produto.price * produto.quantidade;
         });
-        // Exibe o total
+
+        // Mostra total e forma de pagamento
         const totalElement = document.createElement("div");
         totalElement.className = "row mt-3 fw-bold";
         totalElement.innerHTML = `
@@ -44,7 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="col-md-4 text-end">R$ ${total.toFixed(2)}</div>
         `;
         listaCarrinho.appendChild(totalElement);
-        // Adiciona o campo de seleção de forma de pagamento
+
+        // Forma de pagamento
         const formaPagamentoDiv = document.createElement("div");
         formaPagamentoDiv.className = "mt-3";
         formaPagamentoDiv.innerHTML = `
@@ -57,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </select>
         `;
         listaCarrinho.appendChild(formaPagamentoDiv);
-        // Adiciona o botão para enviar ao WhatsApp
+
+        // Botão WhatsApp
         const whatsappButton = document.createElement("button");
         whatsappButton.className = "btn btn-success mt-3 w-100";
         whatsappButton.textContent = "Enviar para WhatsApp";
@@ -65,29 +108,11 @@ document.addEventListener("DOMContentLoaded", () => {
         listaCarrinho.appendChild(whatsappButton);
     }
 
-    // Função para remover um produto do carrinho
-    window.removerProduto = function (index) {
-        carrinho.splice(index, 1); // Remove o produto do array
-        localStorage.setItem("carrinho", JSON.stringify(carrinho)); // Atualiza o localStorage
-        renderizarCarrinho(); // Re-renderiza o carrinho
-    };
-
-    // Função para alterar a quantidade de um produto
-    window.alterarQuantidade = function (index, valor) {
-        if (carrinho[index].quantidade + valor > 0) {
-            carrinho[index].quantidade += valor; // Altera a quantidade
-        } else {
-            alert("A quantidade não pode ser menor que 1. Para remover o produto, clique em 'Remover'.");
-        }
-        localStorage.setItem("carrinho", JSON.stringify(carrinho)); // Atualiza o localStorage
-        renderizarCarrinho(); // Re-renderiza o carrinho
-    };
-
-    // Função para enviar a lista para o WhatsApp
+    // 📲 Envia mensagem para WhatsApp
     function enviarParaWhatsApp(total) {
         const formaPagamento = document.getElementById("forma-pagamento").value;
         let mensagem = "🛒 *Lista de Produtos - MIMI BEBIDAS* 🛒\n\n";
-        // Adiciona os detalhes dos produtos
+
         carrinho.forEach((produto) => {
             const subtotal = produto.price * produto.quantidade;
             mensagem += `*Produto:* ${produto.name}\n`;
@@ -95,46 +120,47 @@ document.addEventListener("DOMContentLoaded", () => {
             mensagem += `*Quantidade:* ${produto.quantidade}\n`;
             mensagem += `*Subtotal:* R$${subtotal.toFixed(2)}\n\n`;
         });
-        // Adiciona o total e a forma de pagamento
+
         mensagem += `*Total:* R$${total.toFixed(2)}\n`;
         mensagem += `*Forma de Pagamento:* ${formatarFormaPagamento(formaPagamento)}\n`;
-        // Se a forma de pagamento for Pix, adiciona o número do Pix e o QR Code
+
         if (formaPagamento === "pix") {
-            const numeroPix = "Após confirmar seu pedido, irei enviar o pix para depósito."; // Substitua pelo número real do Pix
-            mensagem += `\n*Chave Pix:* ${numeroPix}\n`;
+            mensagem += `\n*Chave Pix:* Irei ENVIAR a chave pix assim que separar seus produtos para envio.`;
         }
-        // Cria o link do WhatsApp
-        const url = `https://wa.me/5588993502977?text=${encodeURIComponent(mensagem)}`;
+
+        const url = `https://wa.me/5588993502977?text= ${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
 
-        // Chama a função para deletar os produtos após o envio
         deletarProdutos();
     }
 
-    // Função para formatar a forma de pagamento
+    // 💳 Formata a forma de pagamento
     function formatarFormaPagamento(forma) {
         switch (forma) {
-            case "pix":
-                return "Pix";
-            case "debito":
-                return "Cartão de Débito";
-            case "credito":
-                return "Cartão de Crédito";
-            case "dinheiro":
-                return "À vista (Dinheiro Físico)";
-            default:
-                return "Não especificado";
+            case "pix": return "Pix";
+            case "debito": return "Cartão de Débito";
+            case "credito": return "Cartão de Crédito";
+            case "dinheiro": return "À vista (Dinheiro Físico)";
+            default: return "Não especificado";
         }
     }
 
-    // Função para deletar os produtos do carrinho
+    // 🧹 Limpa o carrinho após envio
     function deletarProdutos() {
-        carrinho = []; // Limpa o array do carrinho
-        localStorage.removeItem("carrinho"); // Remove o carrinho do localStorage
-        renderizarCarrinho(); // Re-renderiza o carrinho para mostrar que está vazio
+        carrinho = [];
+        localStorage.removeItem("carrinho");
+        renderizarCarrinho();
         alert("Os produtos foram removidos do carrinho após o envio!");
     }
 
-    // Inicializa a renderização do carrinho
+    // 🔍 Evento global para os botões ".btn-adicionar"
+    document.addEventListener("click", (event) => {
+        if (event.target.classList.contains("btn-adicionar")) {
+            const produtoId = parseInt(event.target.getAttribute("data-id"));
+            adicionarAoCarrinho(produtoId);
+        }
+    });
+
+    // 🔄 Inicializa o carrinho
     renderizarCarrinho();
 });
