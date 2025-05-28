@@ -145,7 +145,7 @@ const listaProdutos = [
     },
     { 
         id: 51,
-        name: "Cerveja Itaipava Pack (Natural) c/24 300ml", 
+        name: "Cerveja Itaipava retornável (Natural) c/24 300ml", 
         description: "Contém 24 long Neck com 300ml cada.", 
         valor: "R$ 55,00", 
         price: 55.00, 
@@ -172,7 +172,7 @@ const listaProdutos = [
     },
     { 
         id: 57,
-        name: "Cerveja Skol Pilsen Pack c/23 300ml (Natural)", 
+        name: "Cerveja Skol Pilsen Retornável c/23 300ml (Natural)", 
         description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -181,7 +181,7 @@ const listaProdutos = [
     },
     { 
         id: 58,
-        name: "Cerveja Skol Pilsen Pack c/23 300ml (Gelada)", 
+        name: "Cerveja Skol Pilsen Retornável c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -191,7 +191,7 @@ const listaProdutos = [
     { 
         id: 59,
         name: "Cerveja Brahma Duplo Malte Pack c/12 350ml", 
-        description: "Temperatura: Gelada. Long Neck. Retornável", 
+        description: "Pack com 12 unidades. Lata com 350ml cada.", 
         valor: "R$ 48,00", 
         price: 48.00, 
         category: "cervejas", 
@@ -244,7 +244,7 @@ const listaProdutos = [
     },
     { 
         id: 98,
-        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Natural)", 
+        name: "Cerveja Brahma Chopp Retornável c/23 330ml (Natural)", 
         description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -253,7 +253,7 @@ const listaProdutos = [
     },
     { 
         id: 99,
-        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Gelada)", 
+        name: "Cerveja Brahma Chopp Retornável c/23 330ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.",
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -262,7 +262,7 @@ const listaProdutos = [
     },
     { 
         id: 100,
-        name: "Cerveja Bohemia Pach c/23 300ml (Natural)", 
+        name: "Cerveja Bohemia Retornável c/23 300ml (Natural)", 
         description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -271,7 +271,7 @@ const listaProdutos = [
     },
     { 
         id: 101,
-        name: "Cerveja Bohemia Pach c/23 300ml (Gelada)", 
+        name: "Cerveja Bohemia Retornável c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -280,7 +280,7 @@ const listaProdutos = [
     },
     { 
         id: 102,
-        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Natural)", 
+        name: "Cerveja Brahma Duplo Malte Retornável c/23 300ml (Natural)", 
         description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
         valor: "R$ 70,00", 
         price: 70.00, 
@@ -289,7 +289,7 @@ const listaProdutos = [
     },
     { 
         id: 103,
-        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Gelada)", 
+        name: "Cerveja Brahma Duplo Malte Retornável c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
         valor: "R$ 80,00", 
         price: 80.00, 
@@ -298,8 +298,8 @@ const listaProdutos = [
     },
     { 
         id: 112,
-        name: "Skol Beats Senses Pack c/6 313ml", 
-        description: "Contém 6 unidades com 313ml cada.", 
+        name: "Skol Beats Senses Pack c/6 269ml", 
+        description: "Contém 6 unidades com 269ml cada.", 
         valor: "R$ 45,00", 
         price: 45.00, 
         category: "cervejas", 
@@ -307,8 +307,8 @@ const listaProdutos = [
     },
     { 
         id: 113,
-        name: "Skol Beats Senses Long Neck 313ml", 
-        description: "Contém 1 unidade com 313ml.", 
+        name: "Skol Beats Senses Long Neck 269ml", 
+        description: "Contém 1 unidade com 269ml.", 
         valor: "R$ 7,50", 
         price: 7.50, 
         category: "cervejas", 
@@ -331,5 +331,14 @@ const listaProdutos = [
         price: 7.50, 
         category: "cervejas", 
         image: "img/cerveja_skol_beats_red_mix_long_neck_269ml.jpg"    
+    },
+    { 
+        id: 122,
+        name: "Spaten Pack c/12 350ml", 
+        description: "Contém 12 unidades lata com 350ml.", 
+        valor: "R$ 55,00", 
+        price: 55.00, 
+        category: "cervejas",
+        image: "img/cerveja_spaten_pack12_350ml.jpg"    
     },
 ]

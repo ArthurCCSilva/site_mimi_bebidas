@@ -30,8 +30,8 @@ const listaProdutos = [
         id: 4,
         name: "Rum Montilla Carta Branca 1L", 
         description: "Montilla Carta Branca com teor alcoólico de 36% vol.", 
-        valor: "R$ 32,00", 
-        price: 32.00, 
+        valor: "R$ 33,00", 
+        price: 33.00, 
         category: "destilados", 
         image: "img/rum_montilla_carta_branca_1l.jpg"    
     },
@@ -160,7 +160,7 @@ const listaProdutos = [
     },
     { 
         id: 19,
-        name: "Vodka Slova Fruits Blueberry 965ml", 
+        name: "Vodka Slova Fruits Blueberry (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -205,10 +205,10 @@ const listaProdutos = [
     },
     { 
         id: 24,
-        name: "Cachaça Ypioca Guaraná 1L", 
+        name: "Cachaça Ypioca Guaraná (gelada) 1L", 
         description: "Marca: Ypioca.<br>Tipo: Quaraná.<br>Contém: 1L.", 
-        valor: "R$ 24,00", 
-        price: 24.00, 
+        valor: "R$ 25,00", 
+        price: 25.00, 
         category: "destilados", 
         image: "img/cachaca_ypioca_guarana_1l.jpg" 
     },
@@ -367,7 +367,7 @@ const listaProdutos = [
     },
     { 
         id: 42,
-        name: "Vodka Slova Fruitas Vermelhas 965ml", 
+        name: "Vodka Slova Fruitas Vermelhas (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -439,7 +439,7 @@ const listaProdutos = [
     },
     { 
         id: 50,
-        name: "Vodka Slova Limão 965ml", 
+        name: "Vodka Slova Limão (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -448,7 +448,7 @@ const listaProdutos = [
     },
     { 
         id: 51,
-        name: "Cerveja Itaipava Pack (Natural) c/24 300ml", 
+        name: "Cerveja Itaipava Retornável (Natural) c/24 300ml", 
         description: "Contém 24 long Neck com 300ml cada.", 
         valor: "R$ 55,00", 
         price: 55.00, 
@@ -502,7 +502,7 @@ const listaProdutos = [
     },
     { 
         id: 57,
-        name: "Cerveja Skol Pilsen Pack c/23 300ml (Natural)", 
+        name: "Cerveja Skol Pilsen Retornável c/23 300ml (Natural)", 
         description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -511,7 +511,7 @@ const listaProdutos = [
     },
     { 
         id: 58,
-        name: "Cerveja Skol Pilsen Pack c/23 300ml (Gelada)", 
+        name: "Cerveja Skol Pilsen Retornável c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -521,7 +521,7 @@ const listaProdutos = [
     { 
         id: 59,
         name: "Cerveja Brahma Duplo Malte Pack c/12 350ml", 
-        description: "Temperatura: Gelada. Long Neck. Retornável", 
+        description: "Pack com 12 unidades. Lata com 350ml cada.", 
         valor: "R$ 48,00", 
         price: 48.00, 
         category: "cervejas", 
@@ -610,21 +610,21 @@ const listaProdutos = [
     },
     { 
         id: 69,
-        name: "Refrigerante Delrio Cola pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Cola pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_cola_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_cola_fardo6_2l.jpg"    
     },
     { 
         id: 70,
-        name: "Refrigerante Delrio Guaraná pack c/12 1L", 
-        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        name: "Refrigerante Delrio Guaraná pack c/6 1L", 
+        description: "Temperatura: Natural. 6 Unidades com 1L cada.", 
         valor: "R$ 26,00", 
         price: 26.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_guarana_fardo12_1l.jpg"    
+        image: "img/refrigerante_delrio_guarana_fardo6_1l.jpg"  
     },
     { 
         id: 71,
@@ -646,12 +646,12 @@ const listaProdutos = [
     },
     { 
         id: 73,
-        name: "Refrigerante Delrio Laranja pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Laranja pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_laranja_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_laranja_fardo6_2l.jpg"    
     },
     { 
         id: 74,
@@ -682,12 +682,12 @@ const listaProdutos = [
     },
     { 
         id: 77,
-        name: "Refrigerante Delrio Uva pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Uva pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00,
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_uva_fardo12_2l.jpg"   
+        image: "img/refrigerante_delrio_uva_fardo6_2l.jpg"   
     },
     { 
         id: 78,
@@ -709,12 +709,12 @@ const listaProdutos = [
     },
     { 
         id: 80,
-        name: "Refrigerante Delrio Guaraná pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        name: "Refrigerante Delrio Guaraná pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_guarana_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_guarana_fardo6_2l.jpg"    
     },
     { 
         id: 81,
@@ -792,8 +792,8 @@ const listaProdutos = [
         id: 89,
         name: "Cigarro Clean c/20 unidades", 
         description: "Marca: Clean.<br>Unidades: 20.<br> Tipo: by Click", 
-        valor: "R$ 11,00", 
-        price: 11.00, 
+        valor: "R$ 10,00", 
+        price: 10.00, 
         category: "variedades", 
         image: "img/cigarro_clean_20unidades.jpg"    
     },
@@ -842,15 +842,15 @@ const listaProdutos = [
         category: "variedades", 
         image: "img/cigarro_rothmans_blue_20unidades.jpg"
     },
-    /*retirar{ 
+    { 
         id: 95,
-        name: "Cerveja Stella Artois Lonk Neck 330ml", 
-        description: "Contém 1 Long Neck, com 330ml.", 
-        valor: "R$ 45,00", 
-        price: 45.00, 
-        category: "cervejas", 
-        image: "img/cerveja_stella_artois_long_neck_330ml.jpg"    
-    },*/
+        name: "Água Iluminágua Com Gás Pack c/12 500ml", 
+        description: "Contém 12 garrafas com 500ml cada.", 
+        valor: "R$ 20,00", 
+        price: 20.00, 
+        category: "variedades", 
+        image: "img/agua_com_gas_iluminágua_pack12_500ml.jpg"    
+    },
     { 
         id: 96,
         name: "Cerveja Spaten Pack c/6 355ml", 
@@ -871,7 +871,7 @@ const listaProdutos = [
     },
     { 
         id: 98,
-        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Natural)", 
+        name: "Cerveja Brahma Chopp Retornável c/23 330ml (Natural)", 
         description: "Temperatura: Natural.<br>Long Neck.<br>Retornável.", 
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -880,7 +880,7 @@ const listaProdutos = [
     },
     { 
         id: 99,
-        name: "Cerveja Brahma Chopp Pach c23/ 330ml (Gelada)", 
+        name: "Cerveja Brahma Chopp Retornável c/23 330ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck.<br>Retornável.",
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -889,7 +889,7 @@ const listaProdutos = [
     },
     { 
         id: 100,
-        name: "Cerveja Bohemia Pach c/23 300ml (Natural)", 
+        name: "Cerveja Bohemia Retornável c/23 300ml (Natural)", 
         description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
         valor: "R$ 65,00", 
         price: 65.00, 
@@ -898,7 +898,7 @@ const listaProdutos = [
     },
     { 
         id: 101,
-        name: "Cerveja Bohemia Pach c/23 300ml (Gelada)", 
+        name: "Cerveja Bohemia Retornável c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck Puro Malte.<br>Retornável.",
         valor: "R$ 75,00", 
         price: 75.00, 
@@ -907,7 +907,7 @@ const listaProdutos = [
     },
     { 
         id: 102,
-        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Natural)", 
+        name: "Cerveja Brahma Duplo Retornável Pach c/23 300ml (Natural)", 
         description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
         valor: "R$ 70,00", 
         price: 70.00, 
@@ -916,7 +916,7 @@ const listaProdutos = [
     },
     { 
         id: 103,
-        name: "Cerveja Brahma Duplo Malte Pach c/23 300ml (Gelada)", 
+        name: "Cerveja Brahma Duplo Retornável Pach c/23 300ml (Gelada)", 
         description: "Temperatura: Gelada.<br>Long Neck Duplo Malte.<br>Retornável.",
         valor: "R$ 80,00", 
         price: 80.00, 
@@ -988,8 +988,8 @@ const listaProdutos = [
     },
     { 
         id: 112,
-        name: "Skol Beats Senses Pack c/6 313ml", 
-        description: "Contém 6 unidades com 313ml cada.", 
+        name: "Skol Beats Senses Pack c/6 269ml", 
+        description: "Contém 6 unidades com 269ml cada.", 
         valor: "R$ 45,00", 
         price: 45.00, 
         category: "cervejas", 
@@ -997,8 +997,8 @@ const listaProdutos = [
     },
     { 
         id: 113,
-        name: "Skol Beats Senses Long Neck 313ml", 
-        description: "Contém 1 unidade com 313ml.", 
+        name: "Skol Beats Senses Long Neck 269ml", 
+        description: "Contém 1 unidade com 269ml.", 
         valor: "R$ 7,50", 
         price: 7.50, 
         category: "cervejas", 
@@ -1066,5 +1066,52 @@ const listaProdutos = [
         price: 78.00, 
         category: "destilados", 
         image: "img/cabare_ice_limao_fardo12_275ml.jpg"    
+    },
+
+    { 
+        id: 121,
+        name: "Sukita Laranja 2l", 
+        description: "Contém 1 unidade com 2L.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_sukita_2l.jpg"    
+    },
+    { 
+        id: 122,
+        name: "Spaten Pack c/12 350ml", 
+        description: "Contém 12 unidades lata com 350ml.", 
+        valor: "R$ 55,00", 
+        price: 55.00, 
+        category: "cervejas",
+        image: "img/cerveja_spaten_pack12_350ml.jpg"    
+    },
+
+    { 
+        id: 123,
+        name: "Spaten Lata 350ml", 
+        description: "Contém 1 unidade lata com 350ml.", 
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas",
+        image: "img/cerveja_spaten_lata_350ml.jpg"    
+    },
+    { 
+        id: 124,
+        name: "Smirnoff Ice Pack c/6 275ml", 
+        description: "Contém 6 unidades long Neck com 275ml.", 
+        valor: "R$ 48,00", 
+        price: 48.00, 
+        category: "destilaos",
+        image: "img/smirnoff_ice_pack6_275ml.jpg"    
+    },
+    { 
+        id: 125,
+        name: "Smirnoff Ice Long Neck 275ml", 
+        description: "Contém 1 unidade long Neck com 275ml.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "destilaos",
+        image: "img/smirnoff_ice_long_neck_275ml.jpg"    
     },
 ];

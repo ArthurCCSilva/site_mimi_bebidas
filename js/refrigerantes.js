@@ -91,21 +91,21 @@ const listaProdutos = [
     },
     { 
         id: 69,
-        name: "Refrigerante Delrio Cola pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Cola pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.",
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_cola_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_cola_fardo6_2l.jpg"    
     },
     { 
         id: 70,
-        name: "Refrigerante Delrio Guaraná pack c/12 1L", 
-        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        name: "Refrigerante Delrio Guaraná pack c/6 1L", 
+        description: "Temperatura: Natural. 6 Unidades com 1L cada.", 
         valor: "R$ 26,00", 
         price: 26.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_guarana_fardo12_1l.jpg"    
+        image: "img/refrigerante_delrio_guarana_fardo6_1l.jpg"    
     },
     { 
         id: 71,
@@ -127,12 +127,12 @@ const listaProdutos = [
     },
     { 
         id: 73,
-        name: "Refrigerante Delrio Laranja pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Laranja pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_laranja_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_laranja_fardo6_2l.jpg"    
     },
     { 
         id: 74,
@@ -154,12 +154,12 @@ const listaProdutos = [
     },
     { 
         id: 77,
-        name: "Refrigerante Delrio Uva pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 2L cada.", 
+        name: "Refrigerante Delrio Uva pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.", 
         valor: "R$ 40,00", 
         price: 40.00,
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_uva_fardo12_2l.jpg"   
+        image: "img/refrigerante_delrio_uva_fardo6_2l.jpg"   
     },
     { 
         id: 79,
@@ -172,12 +172,12 @@ const listaProdutos = [
     },
     { 
         id: 80,
-        name: "Refrigerante Delrio Guaraná pack c/12 2L", 
-        description: "Temperatura: Natural. 12 Unidades com 1L cada.", 
+        name: "Refrigerante Delrio Guaraná pack c/6 2L", 
+        description: "Temperatura: Natural. 6 Unidades com 2L cada.",
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "refrigerantes", 
-        image: "img/refrigerante_delrio_guarana_fardo12_2l.jpg"    
+        image: "img/refrigerante_delrio_guarana_fardo6_2l.jpg"    
     },
     { 
         id: 104,
@@ -206,4 +206,14 @@ const listaProdutos = [
         category: "refrigerantes", 
         image: "img/coca_cola_sem_acucar_garrafa_1.5l.jpg"
     },
+    { 
+        id: 121,
+        name: "Sukita Laranja 2l", 
+        description: "Contém 1 unidade com 2L.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "refrigerantes", 
+        image: "img/refrigerante_sukita_2l.jpg"    
+    },
+    
 ];

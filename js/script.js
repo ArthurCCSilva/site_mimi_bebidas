@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-input");
     const sortOptions = document.getElementById("sort-options");
     const paginationControls = document.getElementById("pagination-controls");
+    const paginationControls2 = document.getElementById("pagination-controls2");
     let currentPage = 1; // Página atual
     const produtosPorPagina = 12; // Número de produtos por página
 
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Atualiza a barra de paginação
         atualizarPaginacao(produtosFiltrados.length);
+        atualizarPaginacao2(produtosFiltrados.length);
     }
 
     // Função para filtrar produtos com base na barra de pesquisa
@@ -134,6 +136,58 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         paginationControls.appendChild(btnProximo);
+    }
+
+    // Função para atualizar a barra de paginação 2
+    function atualizarPaginacao2(totalProdutos) {
+        paginationControls2.innerHTML = ""; // Limpa a barra de paginação
+        const totalPaginas = Math.ceil(totalProdutos / produtosPorPagina);
+        if (totalPaginas <= 1) return; // Não exibe paginação se houver apenas uma página
+
+        // Botão "Anterior"
+        const btnAnterior = document.createElement("button");
+        btnAnterior.className = `btn btn-sm btn-outline-dark mx-1 ${currentPage === 1 ? "disabled" : ""}`;
+        btnAnterior.textContent = "<";
+        btnAnterior.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                atualizarInterface();
+            }
+        });
+        paginationControls2.appendChild(btnAnterior);
+
+        // Cria os botões de página (apenas 3 opções visíveis)
+        const maxBotoesVisiveis = 3;
+        let inicioPaginas = Math.max(1, currentPage - Math.floor(maxBotoesVisiveis / 2));
+        let fimPaginas = Math.min(totalPaginas, inicioPaginas + maxBotoesVisiveis - 1);
+
+        // Ajusta o início se necessário
+        if (fimPaginas - inicioPaginas + 1 < maxBotoesVisiveis) {
+            inicioPaginas = Math.max(1, fimPaginas - maxBotoesVisiveis + 1);
+        }
+
+        for (let i = inicioPaginas; i <= fimPaginas; i++) {
+            const button = document.createElement("button");
+            button.className = `btn btn-sm ${i === currentPage ? "btn-dark" : "btn-outline-dark"} mx-1`;
+            button.textContent = i;
+            button.addEventListener("click", () => {
+                currentPage = i; // Atualiza a página atual
+                atualizarInterface(); // Atualiza a interface com os novos produtos
+            });
+            paginationControls2.appendChild(button);
+        }
+
+        // Botão "Próximo"
+        const btnProximo = document.createElement("button");
+        btnProximo.className = `btn btn-sm btn-outline-dark mx-1 ${currentPage === totalPaginas ? "disabled" : ""}`;
+        btnProximo.textContent = ">";
+        btnProximo.addEventListener("click", () => {
+            if (currentPage < totalPaginas) {
+                currentPage++;
+                atualizarInterface();
+            }
+        });
+        paginationControls2.appendChild(btnProximo);
     }
 
      // Função para atualizar a interface com base nos filtros, ordenação e paginação

@@ -52,7 +52,7 @@
     </nav>
 
     <!-- Carousel -->
-    <header class="container ">
+    <header class="container " id="up-paginacao">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <!-- Indicadores -->
             <div class="carousel-indicators">
@@ -109,7 +109,7 @@
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
-
+        <div ></div>
     </header>
     <main class="mb-5 mb-md-0">
         <hr class="mt-3">
@@ -170,15 +170,27 @@
 
         <!-- Botão Flutuante -->
         <div class="d-block d-md-none fixed-bottom-end">
-            <a href="carrinho.html"
-                class="btn btn-alterado rounded-circle shadow d-flex align-items-center justify-content-center"
-                style="width: 70px; height: 70px; background-color: #0d6efd;">
+            <a href="carrinho.html" class="btn btn-alterado rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #0d6efd;">
                 <!-- Ícone de carrinho usando Bootstrap Icons -->
                 <i class="bi bi-cart4 icon-yellow"></i>
             </a>
         </div>
         <hr class="mt-3">
 
+        <!--Barra de paginação 2-->
+        <div class="container">
+            <div class="row mr-5">
+                <div style="width: 5px;"></div>
+                <!-- Barra de paginação-->
+                <div class="order-1 order-md-2">
+                    <div class="flex-row-reverse justify-content-md-start d-flex">
+                        <a href="#up-paginacao"><div id="pagination-controls2" class="justify-content-center"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-3">
         <!--PATROCINIOS-->
         <div class="container-fluid">
             <div class="row g-4">
@@ -210,6 +222,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Segundo Carrossel PATROCINIO 2 -->
                 <div class="col-xl-6 col-lg-6 col-md-12 d-flex justify-content-center pb-2">

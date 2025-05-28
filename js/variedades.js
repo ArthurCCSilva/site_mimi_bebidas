@@ -138,8 +138,8 @@ const listaProdutos = [
         id: 89,
         name: "Cigarro Clean c/20 unidades", 
         description: "Marca: Clean.<br>Unidades: 20.<br> Tipo: by Click", 
-        valor: "R$ 11,00", 
-        price: 11.00, 
+        valor: "R$ 10,00", 
+        price: 10.00, 
         category: "variedades", 
         image: "img/cigarro_clean_20unidades.jpg"    
     },
@@ -187,6 +187,15 @@ const listaProdutos = [
         price: 10.00, 
         category: "variedades", 
         image: "img/cigarro_rothmans_blue_20unidades.jpg"
+    },
+    { 
+        id: 95,
+        name: "Água Iluminágua Com Gás Pack c/12 500ml", 
+        description: "Contém 12 garrafas com 500ml cada.", 
+        valor: "R$ 20,00", 
+        price: 20.00, 
+        category: "variedades", 
+        image: "img/agua_com_gas_iluminágua_pack12_500ml.jpg"    
     },
     { 
         id: 107,

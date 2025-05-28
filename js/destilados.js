@@ -29,8 +29,8 @@ const listaProdutos = [
         id: 4,
         name: "Rum Montilla Carta Branca 1L", 
         description: "Montilla Carta Branca com teor alcoólico de 36% vol.", 
-        valor: "R$ 32,00", 
-        price: 32.00, 
+        valor: "R$ 33,00", 
+        price: 33.00, 
         category: "destilados", 
         image: "img/rum_montilla_carta_branca_1l.jpg"    
     },
@@ -80,7 +80,7 @@ const listaProdutos = [
     },
     { 
         id: 19,
-        name: "Vodka Slova Fruits Blueberry 965ml", 
+        name: "Vodka Slova Fruits Blueberry (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -125,10 +125,10 @@ const listaProdutos = [
     },
     { 
         id: 24,
-        name: "Cachaça Ypioca Guaraná 1L", 
+        name: "Cachaça Ypioca Guaraná (gelada) 1L", 
         description: "Marca: Ypioca.<br>Tipo: Quaraná.<br>Contém: 1L.", 
-        valor: "R$ 24,00", 
-        price: 24.00, 
+        valor: "R$ 25,00", 
+        price: 25.00, 
         category: "destilados", 
         image: "img/cachaca_ypioca_guarana_1l.jpg" 
     },
@@ -188,7 +188,7 @@ const listaProdutos = [
     },
     { 
         id: 42,
-        name: "Vodka Slova Fruitas Vermelhas 965ml", 
+        name: "Vodka Slova Fruitas Vermelhas (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -197,7 +197,7 @@ const listaProdutos = [
     },
     { 
         id: 50,
-        name: "Vodka Slova Limão 965ml", 
+        name: "Vodka Slova Limão (gelada) 965ml", 
         description: "Vodka Premium. Teor alcoólico de 13,5% vol.", 
         valor: "R$ 18,00", 
         price: 18.00, 
@@ -266,5 +266,23 @@ const listaProdutos = [
         price: 78.00, 
         category: "destilados", 
         image: "img/cabare_ice_limao_fardo12_275ml.jpg" 
-    },  
+    },
+    { 
+        id: 124,
+        name: "Smirnoff Ice Pack c/6 275ml", 
+        description: "Contém 6 unidades long Neck com 275ml.", 
+        valor: "R$ 48,00", 
+        price: 48.00, 
+        category: "destilaos",
+        image: "img/smirnoff_ice_pack6_275ml.jpg"    
+    },
+    { 
+        id: 125,
+        name: "Smirnoff Ice Long Neck 275ml", 
+        description: "Contém 1 unidade long Neck com 275ml.", 
+        valor: "R$ 8,00", 
+        price: 8.00, 
+        category: "destilaos",
+        image: "img/smirnoff_ice_long_neck_275ml.jpg"    
+    },
 ];

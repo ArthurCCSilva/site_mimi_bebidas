@@ -47,7 +47,7 @@
     </nav>
 
     <!-- Carousel -->
-    <header class="container ">
+    <header class="container" id="up-paginacao">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <!-- Indicadores -->
             <div class="carousel-indicators">
@@ -138,20 +138,32 @@
             <h3 class="texto-separador">REFRIGERANTES</h3>
             <!-- Lista de Produtos -->
             <div id="produtos-container" class="row"></div>
+        </div>
+        <div class="container">
+            <a href="carrinho.html" class="btn btn-dark mt-3 btn-carrinho-web">Ir para o Carrinho</a>
+        </div>
+            
+        <!-- Botão Flutuante -->
+        <div class="d-block d-md-none fixed-bottom-end">
+            <a href="carrinho.html" class="btn btn-alterado rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #0d6efd;">
+                <!-- Ícone de carrinho usando Bootstrap Icons -->
+                <i class="bi bi-cart4 icon-yellow"></i>
+            </a>
+        </div>
+        <hr class="mt-3">
+        <!--Barra de paginação 2-->
+        <div class="container">
+            <div class="row mr-5">
+                <div style="width: 5px;"></div>
+                <!-- Barra de paginação-->
+                <div class="order-1 order-md-2">
+                    <div class="flex-row-reverse justify-content-md-start d-flex">
+                        <a href="#up-paginacao"><div id="pagination-controls2" class="justify-content-center"></div></a>
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <a href="carrinho.html" class="btn btn-dark mt-3 btn-carrinho-web">Ir para o Carrinho</a>
-            </div>
-            
-            <!-- Botão Flutuante -->
-            <div class="d-block d-md-none fixed-bottom-end">
-                <a href="carrinho.html" class="btn btn-alterado rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: #0d6efd;">
-                    <!-- Ícone de carrinho usando Bootstrap Icons -->
-                    <i class="bi bi-cart4 icon-yellow"></i>
-                </a>
-            </div>
         </div>
+
         <hr class="mt-3">
         <!--PATROCINIOS-->
         <div class="container-fluid">
