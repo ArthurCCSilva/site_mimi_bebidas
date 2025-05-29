@@ -130,9 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${quantidadeMinimaTexto}
                         <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
                     </div>
-                    <div class="col-12 col-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
-                        <button class="btn btn-sm btn-danger" onclick="removerProduto(${index})">Remover</button>
-                        <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, -1)">-</button>
+                    <div class="col-md-5 d-flex gap-2 justify-content-center my-3">
+                        <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
+                        <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
                         <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
                     </div>
                 </div>
