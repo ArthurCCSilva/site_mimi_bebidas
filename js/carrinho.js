@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // ✅ Somente ajusta produtos se **NÃO houver** um produto com mínimo igual a 1
                 if (quantidadeMinima > 1 && produto.quantidade < quantidadeMinima) {
                     produto.quantidade = quantidadeMinima;
-                    notificacaoExibida = true; // ✅ Marca que houve alteração
+                    
                 }
             });
-            if (notificacaoExibida) {
-                exibirNotificacaoAtualizacaoQuantidade(); // 🔔 Exibe a notificação apenas uma vez!
-            }
+            
 
             localStorage.setItem("carrinho", JSON.stringify(carrinho));
         }
