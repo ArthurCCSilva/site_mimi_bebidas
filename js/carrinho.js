@@ -24,10 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 // ✅ Somente ajusta produtos se **NÃO houver** um produto com mínimo igual a 1
                 if (quantidadeMinima > 1 && produto.quantidade < quantidadeMinima) {
                     produto.quantidade = quantidadeMinima;
-                    
                 }
             });
-            
 
             localStorage.setItem("carrinho", JSON.stringify(carrinho));
         }
@@ -148,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="col-md-5 d-flex gap-2 justify-content-center my-3">
                     <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
-                    <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
+                    <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)" ${produto.quantidade === 1 ? "disabled" : ""}>-</button>
                     <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
                 </div>
             </div>
