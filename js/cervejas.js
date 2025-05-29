@@ -341,4 +341,13 @@ const listaProdutos = [
         category: "cervejas",
         image: "img/cerveja_spaten_pack12_350ml.jpg"    
     },
+    { 
+        id: 123,
+        name: "Spaten Lata 350ml", 
+        description: "Contém 1 unidade lata com 350ml.", 
+        valor: "R$ 5,00", 
+        price: 5.00, 
+        category: "cervejas",
+        image: "img/cerveja_spaten_lata_350ml.jpg"    
+    },
 ]

@@ -3,12 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const listaCarrinho = document.getElementById("lista-carrinho");
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-    // 📌 Quantidades mínimas por produto
-    const quantidadesMinimas = {
-        11: 2,  14: 6,  15: 6,  32: 6,  34: 6,  36: 6,
-        38: 6,  39: 2,  49: 6,  60: 6,  68: 3,  86: 2,
-        92: 2,  93: 2,  94: 2,  113: 3, 115: 3,123:6, 125: 3
-    };
+
 
     // 🔄 Função para calcular total do carrinho
     function calcularTotal() {
@@ -42,15 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 🔄 Função única para alterar quantidade (+ ou -)
-    window.alterarQuantidade = function(index, valor) {
+    window.alterarQuantidade = function (index, valor) {
         const produto = carrinho[index];
         if (!produto) return;
 
         let total = calcularTotal();
+        const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
         const novaQuantidade = produto.quantidade + valor;
 
-        if (total < 24) {
-            const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
+        // 🔎 Verifica quantos produtos existem no carrinho
+        let quantidadeProdutos = carrinho.length;
+
+        // ✅ Mantém quantidade mínima se total for menor que R$24 OU se houver apenas um produto
+        if (total < 24 || quantidadeProdutos === 1) {
             if (novaQuantidade < quantidadeMinima) {
                 alert(`🚫 A quantidade mínima para ${produto.name} é ${quantidadeMinima} unidades. A quantidade mínima foi ajustada automaticamente.`);
                 produto.quantidade = quantidadeMinima;
@@ -58,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 produto.quantidade = novaQuantidade;
             }
         } else {
+            // ✅ Se total > R$24 e há mais de um produto, permite ajuste livre, mas mínimo de 1
             if (novaQuantidade < 1) {
                 alert(`🚫 Você deve selecionar pelo menos 1 unidade de ${produto.name}.`);
                 return;
@@ -67,14 +67,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
         renderizarCarrinho();
+        // ✅ Recarrega a página se o total for menor que R$24
+        if (calcularTotal() < 24) {
+            location.reload();
+        }
+
     };
 
     // 🚫 Função para remover um produto do carrinho
-    window.removerProduto = function(index) {
-        carrinho.splice(index, 1);
+    window.removerProduto = function (index) {
+        carrinho.splice(index, 1); // ✅ Remove o produto do carrinho
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
-        verificarTotalEReiniciarCarrinho(); // ✅ Verifica se total caiu abaixo de R$24
-        renderizarCarrinho();
+
+        let total = calcularTotal();
+        let quantidadeProdutos = carrinho.length;
+
+        // ✅ Se após a remoção houver apenas 1 produto, aplica a quantidade mínima
+        if (quantidadeProdutos === 1) {
+            carrinho.forEach(produto => {
+                const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
+                if (produto.quantidade < quantidadeMinima) {
+                    produto.quantidade = quantidadeMinima;
+                }
+            });
+            alert("⚠️ Como há apenas um produto no carrinho, a quantidade mínima foi reaplicada.");
+        }
+
+        verificarTotalEReiniciarCarrinho(); // ✅ Verifica se o total caiu abaixo de R$24 e ajusta se necessário
+        renderizarCarrinho(); // 🔄 Atualiza a interface do carrinho
+
+        // ✅ Recarrega a página se o total for menor que R$24
+        if (calcularTotal() < 24) {
+            location.reload();
+        }
+
     };
 
     // 🛒 Renderiza o carrinho na tela
@@ -92,7 +118,9 @@ document.addEventListener("DOMContentLoaded", () => {
             div.classList.add("card", "mb-3");
 
             // Exibe quantidade mínima apenas se total for menor que 24
-            let quantidadeMinimaTexto = total < 24 ? `<p>Quantidade mínima: ${quantidadesMinimas[produto.id] || 1}</p>` : "";
+            let quantidadeMinimaTexto = (total < 24 || carrinho.length === 1)
+                ? `<p>Quantidade mínima: ${quantidadesMinimas[produto.id] || 1}</p>`
+                : "";
 
             div.innerHTML = `
                 <div class="row align-items-center">
