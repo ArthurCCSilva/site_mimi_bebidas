@@ -189,9 +189,22 @@ document.addEventListener("DOMContentLoaded", () => {
             mensagem += `*Produto:* ${produto.name}\n*Preço:* R$${produto.price.toFixed(2)}\n*Quantidade:* ${produto.quantidade}\n*Subtotal:* R$${subtotal.toFixed(2)}\n\n`;
         });
 
-        mensagem += `*Total:* R$${total.toFixed(2)}\n*Forma de Pagamento:* ${formaPagamento}`;
+        mensagem += `*Total:* R$${total.toFixed(2)}\n*Forma de Pagamento:* ${formaPagamento}\n`;
+
+        // ✅ Adiciona a chave Pix se a forma de pagamento for Pix
+        if (formaPagamento === "pix") {
+            const chavePix = "**Irei enviar a chave pix após a confirmação do seu pedido.**"; // Substitua pelo número correto
+            mensagem += `*🔗 Chave Pix:* ${chavePix}\n`;
+        }
+
         const url = `https://wa.me/5588993502977?text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
+
+        // ✅ Limpa o carrinho após envio do pedido
+        carrinho = []; // Esvazia o array do carrinho
+        localStorage.removeItem("carrinho"); // Remove do armazenamento local
+        renderizarCarrinho(); // Atualiza a interface do carrinho
+
     }
 
     // 📌 Inicializa o carrinho
