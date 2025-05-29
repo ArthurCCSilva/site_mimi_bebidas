@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 🔔 Função para exibir notificação quando quantidade mínima é ajustada automaticamente
     function exibirNotificacaoAtualizacaoQuantidade() {
-        alert("🔔 A quantidade mínima dos produtos foi ajustada automaticamente.Valor total somado ficou abixo de R$24,00");
+        alert("🔔 A quantidade mínima dos produtos foi ajustada automaticamente. Valor total somado ficou abaixo de R$24,00");
     }
 
     // 📌 Inicializa o carrinho
