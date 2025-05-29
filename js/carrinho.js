@@ -220,13 +220,14 @@ document.addEventListener("DOMContentLoaded", () => {
         renderizarCarrinho(); // Atualiza a interface do carrinho
 
     }
-
+    
     // 🔔 Função para exibir notificação quando quantidade mínima é ajustada automaticamente
-    function exibirNotificacaoAtualizacaoQuantidade() {
-        alert("🔔 A quantidade mínima dos produtos foi ajustada automaticamente. Valor total somado ficou abaixo de R$24,00");
-    }
+    //function exibirNotificacaoAtualizacaoQuantidade() {
+    //    alert("🔔 A quantidade mínima dos produtos foi ajustada automaticamente. Valor total somado ficou abaixo de R$24,00");
+    //}
 
     // 📌 Inicializa o carrinho
-    garantirQuantidadesMinimas();
+    garantirQuantidadesMinimas();  
+    //exibirNotificacaoAtualizacaoQuantidade(); // 🔔 Adiciona a notificação depois, sem alterar a lógica!
     renderizarCarrinho();
 });
