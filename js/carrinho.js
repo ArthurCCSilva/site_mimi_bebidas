@@ -13,13 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // 🔄 Função para garantir quantidades mínimas (se total < 24)
     function garantirQuantidadesMinimas() {
         let total = calcularTotal();
-        if (total < 24) {
+
+        // ✅ Verifica se existe pelo menos um produto com quantidade mínima igual a 1
+        const temProdutoComMinimoUm = carrinho.some(produto => (quantidadesMinimas[produto.id] || 1) === 1);
+
+        if (total < 24 && !temProdutoComMinimoUm) {
             carrinho.forEach(produto => {
                 const quantidadeMinima = quantidadesMinimas[produto.id] || 1;
-                if (produto.quantidade < quantidadeMinima) {
+
+                // ✅ Somente ajusta produtos se **NÃO houver** um produto com mínimo igual a 1
+                if (quantidadeMinima > 1 && produto.quantidade < quantidadeMinima) {
                     produto.quantidade = quantidadeMinima;
                 }
             });
+
             localStorage.setItem("carrinho", JSON.stringify(carrinho));
         }
     }
@@ -113,30 +120,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let total = calcularTotal();
 
+        // ✅ Verifica se existe pelo menos um produto com quantidade mínima igual a 1 no carrinho
+        const temProdutoComMinimoUm = carrinho.some(produto => (quantidadesMinimas[produto.id] || 1) === 1);
+
         carrinho.forEach((produto, index) => {
             const div = document.createElement("div");
             div.classList.add("card", "mb-3");
 
-            // Exibe quantidade mínima apenas se total for menor que 24
-            let quantidadeMinimaTexto = (total < 24 || carrinho.length === 1)
-                ? `<p>Quantidade mínima: ${quantidadesMinimas[produto.id] || 1}</p>`
-                : "";
+            let quantidadeMinima = quantidadesMinimas[produto.id] || 1;
+
+            // ✅ Define se a quantidade mínima deve ser exibida
+            let mostrarQuantidadeMinima =
+                (total < 24) || // Mostra se total for menor que R$24
+                (!temProdutoComMinimoUm && produto.quantidade < quantidadeMinima); // Só exibe se não houver um produto com mínimo igual a 1
+
+            let quantidadeMinimaTexto = (mostrarQuantidadeMinima && !temProdutoComMinimoUm) ? `<p>Quantidade mínima: ${quantidadeMinima}</p>` : "";
 
             div.innerHTML = `
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-7">
-                        <h5 class="card-title">${produto.name}</h5>
-                        <p class="card-text">Preço unitário: R$${produto.price.toFixed(2)}</p>
-                        ${quantidadeMinimaTexto}
-                        <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
-                    </div>
-                    <div class="col-md-5 d-flex gap-2 justify-content-center my-3">
-                        <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
-                        <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
-                        <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7">
+                    <h5 class="card-title">${produto.name}</h5>
+                    <p class="card-text">Preço unitário: R$${produto.price.toFixed(2)}</p>
+                    ${quantidadeMinimaTexto}
+                    <p class="card-text">Quantidade: <span id="quantidade-${index}">${produto.quantidade}</span></p>
                 </div>
-            `;
+                <div class="col-md-5 d-flex gap-2 justify-content-center my-3">
+                    <button class="btn btn-sm btn-danger me-2" onclick="removerProduto(${index})">Remover</button>
+                    <button class="btn btn-sm btn-primary me-2" onclick="alterarQuantidade(${index}, -1)">-</button>
+                    <button class="btn btn-sm btn-primary" onclick="alterarQuantidade(${index}, 1)">+</button>
+                </div>
+            </div>
+        `;
 
             listaCarrinho.appendChild(div);
         });
