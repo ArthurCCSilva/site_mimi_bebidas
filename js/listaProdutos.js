@@ -37,7 +37,7 @@ const listaProdutos = [
     },
     {   id: 5,
         name: "Campari 998ml", 
-        description: "Cmapari com teor alcoólico de 28,5% vol.", 
+        description: "Campari com teor alcoólico de 28,5% vol.", 
         valor: "R$ 65,00", 
         price: 65.00, 
         category: "destilados", 
@@ -53,7 +53,7 @@ const listaProdutos = [
     },
     {   id: 7,
         name: "Cerveja Petra Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 44,00", 
         price: 44.00, 
         category: "cervejas", 
@@ -62,7 +62,7 @@ const listaProdutos = [
     {   
         id: 8,
         name: "Cerveja Skol Pilsen Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml. Cerveja pilsen.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml. Cerveja pilsen.", 
         valor: "R$ 43,00", 
         price: 43.00, 
         category: "cervejas", 
@@ -71,7 +71,7 @@ const listaProdutos = [
     { 
         id: 9,
         name: "Cerveja Heineken Long Neck Pack c/6 garrafas 330ml", 
-        description: "Contém 6 garrafas. Cada garrafa contém 330ml.", 
+        description: "(GELADA) 6 garrafas. Cada garrafa contém 330ml.", 
         valor: "R$ 42,00", 
         price: 42.00, 
         category: "cervejas", 
@@ -116,7 +116,7 @@ const listaProdutos = [
     { 
         id: 14,
         name: "Cerveja Petra Lata 350ml", 
-        description: "Cerveja Puro Malte. Contém 1 lata de 350ml", 
+        description: "(GELADA) Cerveja Puro Malte. Contém 1 lata de 350ml", 
         valor: "R$ 4,50", 
         price: 4.50, 
         category: "cervejas", 
@@ -125,7 +125,7 @@ const listaProdutos = [
     { 
         id: 15,
         name: "Cerveja Skol Lata 350ml", 
-        description: "Cerveja Pilsen. Contém 1 lata de 350ml.", 
+        description: "(GELADA) Cerveja Pilsen. Contém 1 lata de 350ml.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "cervejas", 
@@ -134,7 +134,7 @@ const listaProdutos = [
     { 
         id: 16,
         name: "Cerveja Heineken Long Neck Garrafa 330ml", 
-        description: "Contém 1 garrafa contendo 330ml.", 
+        description: "(GELADA) 1 garrafa contendo 330ml.", 
         valor: "R$ 7,00", 
         price: 7.00, 
         category: "cervejas", 
@@ -269,7 +269,7 @@ const listaProdutos = [
     { 
         id: 31,
         name: "Cerveja Devassa Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "cervejas", 
@@ -278,7 +278,7 @@ const listaProdutos = [
     { 
         id: 32,
         name: "Cerveja Devassa Lata 350ml", 
-        description: "Contém 1 lata com 350ml. Cerveja Puro Malte.", 
+        description: "(GELADA) 1 lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "cervejas", 
@@ -287,7 +287,7 @@ const listaProdutos = [
     { 
         id: 33,
         name: "Cerveja Crystal Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. cada lata com 350ml.", 
+        description: "(GELADA) 12 latas. cada lata com 350ml.", 
         valor: "R$ 34,00", 
         price: 34.00, 
         category: "cervejas", 
@@ -296,7 +296,7 @@ const listaProdutos = [
     { 
         id: 34,
         name: "Cerveja Crystal Lata 350ml", 
-        description: "Contém 1 lata com 350ml.", 
+        description: "(GELADA) 1 lata com 350ml.", 
         valor: "R$ 3,50", 
         price: 3.50, 
         category: "cervejas", 
@@ -305,7 +305,7 @@ const listaProdutos = [
     { 
         id: 35,
         name: "Cerveja Bohemia Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 44,00", 
         price: 44.00, 
         category: "cervejas", 
@@ -314,7 +314,7 @@ const listaProdutos = [
     { 
         id: 36,
         name: "Cerveja Bohemia Lata 350ml", 
-        description: "Contém 1 lata com 350ml. Cerveja Puro Malte.", 
+        description: "(GELADA) 1 lata com 350ml. Cerveja Puro Malte.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "cervejas", 
@@ -323,7 +323,7 @@ const listaProdutos = [
     { 
         id: 37,
         name: "Cerveja Itaipava Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml.", 
         valor: "R$ 35,00", 
         price: 35.00, 
         category: "cervejas", 
@@ -332,7 +332,7 @@ const listaProdutos = [
     { 
         id: 38,
         name: "Cerveja Itaipava Lata 350ml", 
-        description: "Contém 1 lata com 350ml.", 
+        description: "(GELADA) 1 lata com 350ml.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "cervejas", 
@@ -422,7 +422,7 @@ const listaProdutos = [
     { 
         id: 48,
         name: "Cerveja Brahma Chopp Pack c/12 Latas 350ml", 
-        description: "Contém 12 latas. Cada lata com 350ml.", 
+        description: "(GELADA) 12 latas. Cada lata com 350ml.", 
         valor: "R$ 44,00", 
         price: 44.00, 
         category: "cervejas", 
@@ -431,7 +431,7 @@ const listaProdutos = [
     { 
         id: 49,
         name: "Cerveja Brahma Chopp Lata 350ml", 
-        description: "Contém 1 lata com 350ml.", 
+        description: "(GELADA) 1 lata com 350ml.", 
         valor: "R$ 4,00", 
         price: 4.00, 
         category: "cervejas", 
@@ -485,7 +485,7 @@ const listaProdutos = [
     { 
         id: 55,
         name: "Cerveja Budweiser Lager Pack c/6 330ml", 
-        description: "Contem 6 Long Neck com 330ml cada.", 
+        description: "(GELADA) 6 Long Neck com 330ml cada.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "cervejas", 
@@ -494,7 +494,7 @@ const listaProdutos = [
     { 
         id: 56,
         name: "Cerveja Budweiser Lager Long Neck 330ml", 
-        description: "Contem 1 Long Neck com 330ml.", 
+        description: "(GELADA) 1 Long Neck com 330ml.", 
         valor: "R$ 7,00", 
         price: 7.00, 
         category: "cervejas", 
@@ -521,7 +521,7 @@ const listaProdutos = [
     { 
         id: 59,
         name: "Cerveja Brahma Duplo Malte Pack c/12 350ml", 
-        description: "Pack com 12 unidades. Lata com 350ml cada.", 
+        description: "(GELADA) Pack com 12 unidades. Lata com 350ml cada.", 
         valor: "R$ 48,00", 
         price: 48.00, 
         category: "cervejas", 
@@ -530,7 +530,7 @@ const listaProdutos = [
     { 
         id: 60,
         name: "Cerveja Brahma Duplo Malte Lata 350ml", 
-        description: "Contém 1 lata com 350ml.", 
+        description: "(GELADA) 1 lata com 350ml.", 
         valor: "R$ 4,50", 
         price: 4.50, 
         category: "cervejas", 
@@ -575,7 +575,7 @@ const listaProdutos = [
     { 
         id: 65,
         name: "Cerveja Corona Pack c/6 330ml", 
-        description: "Contém 6 Lonk Neck, cada unidade com 330ml.", 
+        description: "(GELADA) 6 Lonk Neck, cada unidade com 330ml.", 
         valor: "R$ 48,00", 
         price: 48.00, 
         category: "cervejas", 
@@ -665,7 +665,7 @@ const listaProdutos = [
     { 
         id: 75,
         name: "Cerveja Stella Artois Pack c/6 330ml", 
-        description: "Contém 6 Long Neck, cada unidade com 330ml.", 
+        description: "(GELADA) 6 Long Neck, cada unidade com 330ml.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "cervejas", 
@@ -854,7 +854,7 @@ const listaProdutos = [
     { 
         id: 96,
         name: "Cerveja Spaten Pack c/6 355ml", 
-        description: "Contém 6 Long Neck. Cada unidade com 355ml.", 
+        description: "(GELADA) 6 Long Neck. Cada unidade com 355ml.", 
         valor: "R$ 40,00", 
         price: 40.00, 
         category: "cervejas", 
@@ -863,7 +863,7 @@ const listaProdutos = [
     { 
         id: 97,
         name: "Cerveja Spaten Long Neck 355ml", 
-        description: "Contém 1 Long Neck com 355ml.", 
+        description: "(GELADA) 1 Long Neck com 355ml.", 
         valor: "R$ 7,00", 
         price: 7.00, 
         category: "cervejas", 
@@ -989,7 +989,7 @@ const listaProdutos = [
     { 
         id: 112,
         name: "Skol Beats Senses Pack c/6 269ml", 
-        description: "Contém 6 unidades com 269ml cada.", 
+        description: "(GELADA) 6 unidades com 269ml cada.", 
         valor: "R$ 45,00", 
         price: 45.00, 
         category: "cervejas", 
@@ -998,7 +998,7 @@ const listaProdutos = [
     { 
         id: 113,
         name: "Skol Beats Senses Long Neck 269ml", 
-        description: "Contém 1 unidade com 269ml.", 
+        description: "(GELADA) 1 unidade com 269ml.", 
         valor: "R$ 7,50", 
         price: 7.50, 
         category: "cervejas", 
@@ -1007,7 +1007,7 @@ const listaProdutos = [
     { 
         id: 114,
         name: "Skol Beats Red Mix Pack c/6 269ml", 
-        description: "Contém 6 unidades com 269ml cada.", 
+        description: "(GELADA) 6 unidades com 269ml cada.", 
         valor: "R$ 45,00", 
         price: 45.00, 
         category: "cervejas", 
@@ -1016,7 +1016,7 @@ const listaProdutos = [
     { 
         id: 115,
         name: "Skol Beats Red Mix Long Neck 269ml", 
-        description: "Contém 1 unidade com 269ml.", 
+        description: "(GELADA) 1 unidade com 269ml.", 
         valor: "R$ 7,50", 
         price: 7.50, 
         category: "cervejas", 
@@ -1044,8 +1044,8 @@ const listaProdutos = [
         id: 118,
         name: "Água Mineral Santa Sophia pach (Natural) c/12 500ml", 
         description: "Contém 12 unidades com 500ml cada.", 
-        valor: "R$ 10,00", 
-        price: 10.00, 
+        valor: "R$ 12,00", 
+        price: 12.00, 
         category: "variedades", 
         image: "img/agua_mineral_santa_sophia_500ml.jpg"
     },
@@ -1053,8 +1053,8 @@ const listaProdutos = [
         id: 119,
         name: "Água com Gás Indaiá pach (natural)500ml", 
         description: "Contém 12 unidades com 500ml cada.", 
-        valor: "R$ 18,00", 
-        price: 18.00, 
+        valor: "R$ 20,00", 
+        price: 20.00, 
         category: "variedades", 
         image: "img/agua_com_gas_indaia_500ml.jpg"
     },
@@ -1080,7 +1080,7 @@ const listaProdutos = [
     { 
         id: 122,
         name: "Spaten Pack c/12 350ml", 
-        description: "Contém 12 unidades lata com 350ml.", 
+        description: "(GELADA) 12 unidades lata com 350ml.", 
         valor: "R$ 55,00", 
         price: 55.00, 
         category: "cervejas",
@@ -1090,7 +1090,7 @@ const listaProdutos = [
     { 
         id: 123,
         name: "Spaten Lata 350ml", 
-        description: "Contém 1 unidade lata com 350ml.", 
+        description: "(GELADA) 1 unidade lata com 350ml.", 
         valor: "R$ 5,00", 
         price: 5.00, 
         category: "cervejas",
@@ -1111,6 +1111,16 @@ const listaProdutos = [
         description: "Contém 1 unidade long Neck com 275ml.", 
         valor: "R$ 8,00", 
         price: 8.00, 
+        category: "destilaos",
+        image: "img/smirnoff_ice_long_neck_275ml.jpg"    
+    },
+
+    { 
+        id: 126,
+        name: "Cigarro Lucky Strike 1 unidade", 
+        description: "Marca: Lucky Strike. Unidade: 1. Tipo: Fresh Double Ice X", 
+        valor: "R$ 1,00", 
+        price: 1.00, 
         category: "destilaos",
         image: "img/smirnoff_ice_long_neck_275ml.jpg"    
     },

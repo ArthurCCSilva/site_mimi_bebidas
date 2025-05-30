@@ -19,5 +19,6 @@
         113: 3,//Skol Beats Senses Long Neck 269ml
         115: 3,//Skol Beats Red Mix Long Neck 269ml
         123: 6,//Spaten Lata 350ml
-        125: 3//Smirnoff Ice Long Neck 275ml
+        125: 3,//Smirnoff Ice Long Neck 275ml
+        126: 11//Cigarro Lucky Strike 1 unidade
     };

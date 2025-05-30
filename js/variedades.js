@@ -246,8 +246,8 @@ const listaProdutos = [
         id: 118,
         name: "Água Mineral Santa Sophia pach (Natural) c/12 500ml", 
         description: "Contém 12 unidades com 500ml cada.", 
-        valor: "R$ 10,00", 
-        price: 10.00, 
+        valor: "R$ 12,00", 
+        price: 12.00, 
         category: "variedades", 
         image: "img/agua_mineral_santa_sophia_500ml.jpg"
     },
@@ -255,9 +255,18 @@ const listaProdutos = [
         id: 119,
         name: "Água com Gás Indaiá pach (natural)500ml", 
         description: "Contém 12 unidades com 500ml cada.", 
-        valor: "R$ 18,00", 
-        price: 18.00, 
+        valor: "R$ 20,00", 
+        price: 20.00, 
         category: "variedades", 
         image: "img/agua_com_gas_indaia_500ml.jpg"
+    },
+    { 
+        id: 126,
+        name: "Cigarro Lucky Strike 1 unidade", 
+        description: "Marca: Lucky Strike. Unidade: 1. Tipo: Fresh Double Ice X", 
+        valor: "R$ 1,00", 
+        price: 1.00, 
+        category: "destilaos",
+        image: "img/cigarro_lucky_strike_1unidade.jpg"    
     },
 ]

@@ -36,7 +36,7 @@ const listaProdutos = [
     },
     {   id: 5,
         name: "Campari 998ml", 
-        description: "Cmapari com teor alcoólico de 28,5% vol.", 
+        description: "Campari com teor alcoólico de 28,5% vol.", 
         valor: "R$ 65,00", 
         price: 65.00, 
         category: "destilados", 
