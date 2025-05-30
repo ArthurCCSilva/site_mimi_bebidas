@@ -119,7 +119,7 @@ const listaProdutos = [
     { 
         id: 87,
         name: "Cigarro Cretec Menthol c/20 unidades", 
-        description: "Marca: Cretec.<br>Unidades: 20.<br>Tipo: Menthol", 
+        description: "Marca: Cretec.<br>Unidades: 20.<br>Tipo: Menthol (black)", 
         valor: "R$ 20,00", 
         price: 20.00, 
         category: "variedades", 
@@ -268,5 +268,14 @@ const listaProdutos = [
         price: 1.00, 
         category: "destilaos",
         image: "img/cigarro_lucky_strike_1unidade.jpg"    
+    },
+    { 
+        id: 127,
+        name: "Cigarro Cretec Menthol 1 unidade", 
+        description: "Marca: Cretec.<br>Unidades: 1 unidade.<br>Tipo: Menthol (black)", 
+        valor: "R$ 1,00", 
+        price: 1.00, 
+        category: "variedades", 
+        image: "img/cigarro_cretec_menthol_1unidade.jpg"    
     },
 ]

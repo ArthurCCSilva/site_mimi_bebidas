@@ -20,5 +20,6 @@
         115: 3,//Skol Beats Red Mix Long Neck 269ml
         123: 6,//Spaten Lata 350ml
         125: 3,//Smirnoff Ice Long Neck 275ml
-        126: 11//Cigarro Lucky Strike 1 unidade
+        126: 11,//Cigarro Lucky Strike 1 unidade
+        127:11 //Cigarro Cretec Menthol 1 unidade
     };
