@@ -1114,7 +1114,6 @@ const listaProdutos = [
         category: "destilaos",
         image: "img/smirnoff_ice_long_neck_275ml.jpg"    
     },
-
     { 
         id: 126,
         name: "Cigarro Lucky Strike 1 unidade", 
@@ -1124,7 +1123,6 @@ const listaProdutos = [
         category: "destilaos",
         image: "img/smirnoff_ice_long_neck_275ml.jpg"    
     },
-
     { 
         id: 127,
         name: "Cigarro Cretec Menthol 1 unidade", 
